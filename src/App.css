@@ -1,0 +1,14 @@
+:root{
+  --mainGreen: #3BB7D3;
+  --mainPink: #d69fd8;
+  --secondaryGreen: #2B95A1;
+  --secondaryBlue: #8DCAFF;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  text-align: center;
+}
