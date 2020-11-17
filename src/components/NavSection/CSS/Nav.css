@@ -7,6 +7,13 @@
   font-size: 1.5rem;
 }
 
+.navs {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .firstnav {
   width: 100%;
   display: -webkit-box;

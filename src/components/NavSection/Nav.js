@@ -3,13 +3,16 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './CSS/Nav.css';
 import homelogo from '../Img/logo_3.png';
+import { useStateValue } from '../Context/StateProvider';
+
 
 const Nav = () => {
+const[{ carts }] = useStateValue();
+console.log(carts);
     return(
 <nav className='navs navbar-expand-sm'>
  <div className = 'firstnav'>
 <Link to='/'>
-  
 <img src= {homelogo} className='logo-img' alt='logo'/>
 </Link>
 <ul className="ml-auto">
@@ -23,9 +26,14 @@ const Nav = () => {
 <Link to='/login'>
     <li>Login</li>
 </Link>
-<Link to='/Cart'>
-    <li><i className='fas fa-shopping-cart'></i></li>
-</Link>
+
+   <div className="cart-icon">
+   <Link to='/Cart'>
+   <li><i className='fas fa-shopping-cart'></i>
+    <span className="cart-number">{carts?.length}</span>
+   </li>
+   </Link>
+   </div>
 </ul>
 </div>
 
@@ -35,13 +43,13 @@ const Nav = () => {
         <li>Home</li>
         </Link>
         <Link to='/Wears'>
-        <li>Product</li>
+        <li>FiestaWears</li>
         </Link>
-        <Link to='/FiestaMakeup'>
-        <li>Fashion-Fiesta Makeup</li>
+        <Link to='/Watches'>
+        <li>FiestaWatches</li>
         </Link>
-        <Link to='/Skincare'>
-        <li>Skincare</li>
+        <Link to='/Bags'>
+        <li>FiestaBags</li>
         </Link>
      </ul>
  </div>

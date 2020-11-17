@@ -1,0 +1,36 @@
+.card {
+  background-color: white;
+  border: none;
+}
+
+.card p {
+  color: black;
+}
+
+.card p:hover {
+  text-decoration: none;
+}
+
+.card img {
+  max-width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .fa-star {
+  color: gold;
+}
+
+.card button {
+  border: none;
+  background-color: #d69fd8;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.card button:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=product.css.map */

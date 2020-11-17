@@ -7,11 +7,11 @@ import Login from './components/LoginPage/Login';
 import Register from './components/RegisterPage/Register';
 import Home from './components/HomePage/Home';
 import Wears from './components/WearsPage/Wears';
-import Wearslist from './components/WearsPage/Wearslist';
-import FiestaMakeup from './components/FiestMakeupPage/FiestaMakeup';
-import Skincare from './components/SkincarePage/Skincare';
+import Watches from './components/WatchesPage/Watches';
+import Bags from './components/BagsPage/Bags';
 import Cart from './components/CartPage/Cart';
 import Footer from './components/FooterSection/Footer';
+import Details from './components/DetailsPage/Details';
 
 
 const App = () => {
@@ -24,10 +24,10 @@ const App = () => {
   <Route path= '/Login' component = {Login} />
   <Route path= '/Register' component = {Register} />
   <Route path= '/Wears' component = {Wears} />
-  <Route path= '/Wearslist' component = {Wearslist} />
-  <Route path= '/FiestaMakeup' component = {FiestaMakeup} />
-  <Route path= '/Skincare' component = {Skincare} />
+  <Route path= '/Watches' component = {Watches} />
+  <Route path= '/Bags' component = {Bags} />
   <Route path= '/Cart' component = {Cart} />
+  <Route path= '/Details' component = {Details} />
   </Switch>
     <Footer />
    </div>

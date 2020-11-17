@@ -5,8 +5,12 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .hero-section{
- height: 60vh;
- img{
-     max-width: 100%;
- }
+    height: 80vh;
+  .home-bg img{
+       width: 100%;
+       height: 50%;
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+
 }

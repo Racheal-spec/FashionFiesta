@@ -1,0 +1,29 @@
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+.cart-info{
+ margin: 20px 0;   
+    .button-div button{
+            border: none;
+            background-color: #d69fd8;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 5px 10px;
+    }
+.cartproduct-title  {
+    color: palevioletred;
+    font-size: 1.2rem;
+} 
+}
+.product-rating .fa-star {
+    color: gold;
+    margin: 10px 0;
+  }
+  
+ .checkout h2{
+padding: 40px 0;
+color: #3BB7D3;
+ } 

@@ -1,0 +1,33 @@
+$mainGreen: #3BB7D3;
+$mainPink: #d69fd8;
+$secondaryGreen: #2B95A1;
+$secondaryBlue: #8DCAFF;
+$white: #ffffff;
+.card{
+    background-color: white;
+    border: none;  
+   p{
+       color: black;
+       &:hover{
+        text-decoration: none;
+    }
+   }  
+    img{
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+    } 
+    .fa-star{
+        color: gold;
+    }
+    button{
+        border: none;
+        background-color: $mainPink;
+        color: $white;
+        font-weight: bold;
+        padding: 5px 0;
+    &:hover{
+        text-decoration: none;
+    }    
+    }
+}
