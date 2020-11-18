@@ -1,0 +1,70 @@
+$mainGreen: #3BB7D3;
+$mainPink: #d69fd8;
+$secondaryGreen: #2B95A1;
+$secondaryBlue: #8DCAFF;
+$white: #ffffff;
+
+footer{
+    background-color: $mainGreen;
+    height: 50vh;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    ul{
+        list-style: none;
+        li{
+            line-height: 35px;
+        }
+        a{
+            color: white;
+            font-weight: bold;
+            transition: all 0.4s ease-in;
+            &:hover{
+                text-decoration: none;
+                color: $mainPink;
+            }
+        }
+    }
+    .copyright-div{
+        background-color: $mainPink;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        p{
+          color: white;
+           font-weight: bold;
+        }
+    }
+    .footer-form{
+        background-color: $secondaryGreen;
+        color: white;
+        padding: 10px 10px;
+        margin: 0 40px;
+        position: absolute;
+        top: -10%;
+        right: 0;
+        strong{
+            font-size: 1.4rem;
+        }
+        .footer-input{
+            width: 100%;
+            padding: 5px 0;
+        }
+        .footer-btn{
+            width: 100%;
+            margin: 10px 0;
+            padding: 5px 0;
+            background-color: $mainPink;
+            color: white;
+            font-weight: bold;
+            border: whitesmoke;
+            transition: all 0.4s ease-in;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background-color: $secondaryGreen;
+            }
+        }
+    }
+}
