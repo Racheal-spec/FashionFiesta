@@ -1,14 +1,13 @@
 
 import React from 'react';
 import Title from '../title';
-import './CSS/Home.scss';
+import './Home.scss';
 import womanShopping from '../Img/woman-shopping.jpg';
 import Product from '../Product/Product';
 
 
 const Home = () => {
    
-
     return(
         <div>
    <section className="hero-section">
@@ -21,7 +20,7 @@ const Home = () => {
    </div>
 </section>
 <section>
-        <div className="py-5">
+<div className="py-5">
             <div className="container">
                 <Title name= 'Featured' title='Products' />
         <div className="row my-5">  
@@ -36,13 +35,13 @@ const Home = () => {
    </div>
     <div className="col-12 col-lg-3 card">
     <Product
-    id="123412"
+    id="123422"
     title="Sed voluptatem accusantium doloremque eaque ipsa"
-    price={15}
-    rating={5}
-    image="https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/contemporaryv2._V519740116_.jpg"
+    price={140}
+    rating={4}
+    image= "https://m.media-amazon.com/images/I/71qBg08NjiL._AC_UL480_FMwebp_QL65_.jpg"
     />
-        </div>
+</div>
     <div className="col-12 col-lg-3 card">
     <Product
     id="123413"
@@ -54,51 +53,42 @@ const Home = () => {
         </div>
     <div className="col-12 col-lg-3 card">
     <Product
-    id="123414"
+    id="123409"
     title="Sed voluptatem accusantium doloremque eaque ipsa"
-    price={16}
+    price={199}
     rating={5}
-    image="https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/DURM-2B65DBD428E3A11C._V531821795_.jpg"
+    image= "https://m.media-amazon.com/images/I/71o-aw5MwfL._AC_UL480_FMwebp_QL65_.jpg"
     />
         </div>
    </div>
    <div className="row my-5">
-<div className="col-12 col-lg-6 card">
-   <Product
-    id="123415"
-    title="Sed voluptatem accusantium doloremque eaque ipsa"
-    price={11.96}
-    rating={5}
-    image="https://m.media-amazon.com/images/I/811ATBGES0L._AC_UL480_FMwebp_QL65_.jpg"
-    />
-    </div>
-    <div className="col-12 col-lg-6 card">
+   <div className="col-12 col-lg-6 card">
     <Product
-    id="123416"
+    id="123402"
     title="Sed voluptatem accusantium doloremque eaque ipsa"
-    price={11.96}
+    price={33}
     rating={5}
-    image="https://m.media-amazon.com/images/I/81zc8i+8qfL._AC_UL480_FMwebp_QL65_.jpg"
+    image= "https://m.media-amazon.com/images/I/81xCpb+RC1L._AC_UL480_FMwebp_QL65_.jpg"
     />
-        </div>   
+</div>
+<div className="col-12 col-lg-6 card">
+<Product
+    id="123419"
+    title="Sed voluptatem accusantium doloremque eaque ipsa"
+    price={350}
+    rating={4}
+    image="https://m.media-amazon.com/images/I/81zLvLeQoTL._AC_UL480_FMwebp_QL65_.jpg"
+    />
+        </div> 
 </div>     
         <div className="row my-5">
         <div className="col-12 col-lg-3 card">
-    <Product
-    id="123417"
+        <Product
+    id="123306"
     title="Sed voluptatem accusantium doloremque eaque ipsa"
-    price={200}
+    price={229}
     rating={5}
-    image="https://m.media-amazon.com/images/I/81zc8i+8qfL._AC_UL480_FMwebp_QL65_.https://m.media-amazon.com/images/I/812mwzWdLsL._AC_UL480_FMwebp_QL65_.jpg"
-    />
-        </div>   
-        <div className="col-12 col-lg-3 card">
-    <Product
-    id="123418"
-    title="Sed voluptatem accusantium doloremque eaque ipsa"
-    price={182}
-    rating={5}
-    image="https://m.media-amazon.com/images/I/71c53JL3YkL._AC_UL480_FMwebp_QL65_.jpg"
+    image= "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21632/133515/D254E32F-E36E-479E-86D3-185E48A78288__82279.1605370560.jpg?c=2"
     />
         </div>   
         <div className="col-12 col-lg-3 card">
@@ -110,6 +100,15 @@ const Home = () => {
     image="https://m.media-amazon.com/images/I/81zLvLeQoTL._AC_UL480_FMwebp_QL65_.jpg"
     />
         </div> 
+        <div className="col-12 col-lg-3 card">
+        <Product
+    id="123309"
+    title="Sed voluptatem accusantium doloremque eaque ipsa"
+    price={450}
+    rating={5}
+    image= "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21649/133584/A211A6B0-A018-477D-A6F5-C7FAF8647AF2__58902.1605548418.jpg?c=2"
+    />
+        </div>       
     <div className="col-12 col-lg-3 card">
     <Product
     id="123420"
@@ -140,10 +139,8 @@ const Home = () => {
     />
         </div> 
             </div>
-    
-    </div>
-
-        </div>
+</div>
+</div>
 </section>
     </div>
 

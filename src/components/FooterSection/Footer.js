@@ -33,7 +33,7 @@ const Footer = () => {
   {/*Third footer column*/}                      
  <div className="col-12 col-lg-3 col-md-6">
 <ul>
-<Link to='/Home'>
+<Link to='/'>
     <li>Home</li>
 </Link>
 <Link to='/Wears'>

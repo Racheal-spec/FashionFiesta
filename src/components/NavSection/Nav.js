@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './CSS/Nav.css';
+import '../NavSection/Nav.scss';
 import homelogo from '../Img/logo_3.png';
 import { useStateValue } from '../Context/StateProvider';
 
