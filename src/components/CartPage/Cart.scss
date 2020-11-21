@@ -2,10 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 50px;
+    margin: 80px 30px;
+
+    background-color: rgba(128, 128, 128, 0.089);
+    .cart-img img{
+        max-width: 100%;
+    }
 }
 .cart-info{
- margin: 20px 0;   
+ margin: 40px 20px;   
     .button-div button{
             border: none;
             background-color: #d69fd8;

@@ -1,11 +1,23 @@
 import React from 'react';
 import Title from '../title';
 import Product from '../Product/Product';
+import './bags.scss';
 
 const Bags = () => {
     return(
+<div>
+<section className="bags-section">
+<div className="bags-wrapper">
+<div className="row">
+    <div className='col bags-bg'>
+
+    </div>
+      </div>
+</div>
+</section>
+
         <section>
-        <div className="py-5">
+        <div className="">
             <div className="container">
                 <Title name= 'Fiesta' title='Bags'/>
                  {/*first product row*/} 
@@ -128,6 +140,7 @@ const Bags = () => {
         </div>
         </div>
         </section>
+        </div>
     )
 }
 

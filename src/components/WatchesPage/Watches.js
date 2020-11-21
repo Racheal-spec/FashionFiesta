@@ -1,11 +1,23 @@
 import React from 'react';
 import Title from '../title';
 import Product from '../Product/Product';
+import './watches.scss';
 
 const Watches = () => {
     return(
+<div>
+<section className="watches-section">
+<div className="watches-wrapper">
+<div className="row">
+    <div className='col watches-bg'>
+
+    </div>
+      </div>
+</div>
+</section>
+
 <section>
-        <div className="py-5">
+        <div className="">
             <div className="container">
                 <Title name= 'Fiesta' title='Watches'/>
                  {/*first product row*/} 
@@ -128,6 +140,7 @@ const Watches = () => {
         </div>
         </div>
         </section>
+        </div>
     )
 }
 

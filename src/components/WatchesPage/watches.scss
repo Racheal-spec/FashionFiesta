@@ -1,0 +1,18 @@
+$mainGreen: #3BB7D3;
+$mainPink: #d69fd8;
+$secondaryGreen: #2B95A1;
+$secondaryBlue: #8DCAFF;
+$white: #ffffff;
+
+.watches-section{
+    height: 100vh;
+    .watches-bg{
+        height: 380px;
+        width: 800px;
+        background-image: linear-gradient(to bottom,  #d69fd8d2, #3bb7d334),url(../Img/watches.jpg);
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat; 
+        background-size: contain;
+}
+}

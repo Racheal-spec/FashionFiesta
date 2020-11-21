@@ -14,6 +14,18 @@ const reducer = (state, action) => {
                 ...state,
                 carts: [...state.carts, action.item],
             };
+        case 'GO_TO_DETAILS':
+          const getDetail = (id) => {
+           const product = state.carts.find(item => item.id === id);
+           return product;
+          }
+          const handleDetail = (id) => {
+              const product = getDetail(id); 
+              state.carts(() => {
+          return {carts: product}
+              })
+          }
+           return {state}
 
         case 'REMOVE_FROM_CART':
 

@@ -1,12 +1,24 @@
 import React from 'react';
 import Title from '../title';
 import Product from '../Product/Product';
+import './Wears.scss';
 
 
 const Wears = () => {
     return(
+        <div>
+<section className="wears-section">
+<div className="wears-wrapper">
+<div className="row">
+    <div className='col wears-bg'>
+
+    </div>
+      </div>
+</div>
+</section>
+
 <section>
-        <div className="py-5">
+        <div className="">
             <div className="container">
                 <Title name= 'Fiesta' title='Wears'/>
                  {/*first product row*/} 
@@ -129,6 +141,7 @@ const Wears = () => {
         </div>
         </div>
         </section>
+        </div>
     )
 }
 
