@@ -1,32 +1,22 @@
 import React from 'react';
+import {useParams} from 'react-router-dom';
+import { allData } from '../Data';
 import { useStateValue } from '../Context/StateProvider';
 
+const Details = () => {
+    const {id} = useParams();
+    const[detail, setDetail] = useStateValue(allData); 
+   
 
-const Details = ({id, title, image, rating, price}) => {
-    const[{details}, dispatch] = useStateValue(); 
-    dispatch({
-        type:'GO-TO_DETAILS',
-        item: {
-          id: id,
-          title: title,
-          image: image,
-          price: price,
-          rating: rating,
-        }
-    })
-    
-
-    return(
-        <div>
-
-{details.map((item) => (
-<div id={item.id}>
- id={item.id}
- title={item.title}
- image={item.image}
- </div>
-))
-}
+return(
+    <div>
+        {/*
+    {/*detail.map(item => (
+            <div className='details' key={id}>
+            <h2>{item.info}</h2>
+              </div>
+    ))*/}
+       
 
 </div>
     )

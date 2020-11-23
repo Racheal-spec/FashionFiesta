@@ -2,26 +2,26 @@ import React from 'react';
 import './product.scss';
 import {Link} from 'react-router-dom';
 import { useStateValue } from '../Context/StateProvider';
-//import handleDetails from '../DetailsPage/handleDetails';
  
 const Product = ({id, title, image, rating, price}) => {
   const[{carts}, dispatch] = useStateValue();
+ 
   const addToCart = () => {
     dispatch({
-    type:'ADD_TO_CART',
-    item: {
-      id: id,
-      title: title,
-      image: image,
-      price: price,
-      rating: rating,
-    },
-  });
-  
+      type:'ADD_TO_CART',
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+   
 } 
 return(
 <div className="card mx-2">
-<Link to={`/Details/${id}`}>
+<Link to={`Details/${id}`}>
   <img src={image} alt="product" className="product-img"/>
   <p className="product-title font-weight-bold">{title}</p>
   </Link>
@@ -36,7 +36,6 @@ return(
   </div>
   <button onClick={addToCart}>Add to Cart</button>
 </div>
-
 )
  }
 

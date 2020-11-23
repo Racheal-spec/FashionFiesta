@@ -1,7 +1,11 @@
+import {allData} from '../Data';
+
 export const initialState = {
     carts: [],
-    user: null
+    allData: [allData],
+    user: null   
 };
+
 
 const reducer = (state, action) => {
     
@@ -14,19 +18,17 @@ const reducer = (state, action) => {
                 ...state,
                 carts: [...state.carts, action.item],
             };
-        case 'GO_TO_DETAILS':
-          const getDetail = (id) => {
-           const product = state.carts.find(item => item.id === id);
-           return product;
-          }
-          const handleDetail = (id) => {
-              const product = getDetail(id); 
-              state.carts(() => {
-          return {carts: product}
-              })
-          }
-           return {state}
-
+/*
+            case 'GO_TO_DETAILS':
+                const details = state.allData.filter((cartsItem, index) => {
+                    return cartsItem.id === action.id
+                })
+             console.log(details);
+                return {
+                    ...state,
+                    allData: [action.item],
+                };    
+*/
         case 'REMOVE_FROM_CART':
 
             const index = state.carts.findIndex(

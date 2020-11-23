@@ -9,7 +9,6 @@ $white: #ffffff;
     height: 100vh;
     padding: 20px 0;
     position: relative;
-
    .hero-wrapper{
     display: flex;
     align-items: center;
@@ -42,8 +41,6 @@ $white: #ffffff;
     }
 
 }
-
-
 .main-button{
     border: none;
     background-color: $mainPink;
@@ -79,4 +76,13 @@ $white: #ffffff;
         background-repeat: no-repeat; 
         background-size: cover;
 }
+}
+
+.product-section{
+    .product-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 50px
+    }
 }

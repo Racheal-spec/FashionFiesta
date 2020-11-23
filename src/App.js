@@ -27,7 +27,9 @@ const App = () => {
   <Route path= '/Watches' component = {Watches} />
   <Route path= '/Bags' component = {Bags} />
   <Route path= '/Cart' component = {Cart} />
+  <Route path= '/Details' exact component = {Details} />
   <Route path= '/Details/:id' component = {Details} />
+
   </Switch>
     <Footer />
    </div>
