@@ -4,7 +4,7 @@ $secondaryGreen: #2B95A1;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
-.wears-section{
+.wears-herosection{
     height: 100vh;
     .wears-bg{
         height: 380px;
@@ -15,4 +15,13 @@ $white: #ffffff;
         background-repeat: no-repeat; 
         background-size: contain;
 }
+}
+
+.wears-section{
+    .wears-card{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 50px
+    }
 }

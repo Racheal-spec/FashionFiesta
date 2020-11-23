@@ -1,0 +1,25 @@
+$mainGreen: #3BB7D3;
+$mainPink: #d69fd8;
+$secondaryGreen: #2b95a1;
+$lightGreen: #2b95a18a;
+$secondaryBlue: #8DCAFF;
+$white: #ffffff;
+
+.details{
+    height: 100vh;
+    img{
+        max-width: 100%;
+    }
+    .second-column{
+        text-align: left;
+     strong {
+         color: $mainGreen;
+     }
+     h4{
+         margin: 13px 0;
+     }
+    .fa-star{
+        color: gold;
+    }    
+    }
+}

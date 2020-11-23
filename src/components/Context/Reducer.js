@@ -1,8 +1,14 @@
-import {allData} from '../Data';
+import {wears} from '../../Data/wears';
+import {home} from '../../Data/home';
+import { watches } from '../../Data/watches';
+import { bags } from '../../Data/bags';
 
 export const initialState = {
     carts: [],
-    allData: [allData],
+    wears: wears,
+    home: home,
+    watches: watches,
+    bags: bags,
     user: null   
 };
 
@@ -18,17 +24,7 @@ const reducer = (state, action) => {
                 ...state,
                 carts: [...state.carts, action.item],
             };
-/*
-            case 'GO_TO_DETAILS':
-                const details = state.allData.filter((cartsItem, index) => {
-                    return cartsItem.id === action.id
-                })
-             console.log(details);
-                return {
-                    ...state,
-                    allData: [action.item],
-                };    
-*/
+
         case 'REMOVE_FROM_CART':
 
             const index = state.carts.findIndex(

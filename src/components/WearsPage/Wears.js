@@ -2,15 +2,14 @@ import React from 'react';
 import Title from '../title';
 import Product from '../Product/Product';
 import './Wears.scss';
-import { allData } from '../Data';
 import { useStateValue } from '../Context/StateProvider';
 
 
 const Wears = () => {
-    const[Wears, setWears] = useStateValue(allData);
+    const[{wears}, dispatch] = useStateValue();
     return(
         <div>
-<section className="wears-section">
+<section className="wears-herosection">
 <div className="wears-wrapper">
 <div className="row">
     <div className='col wears-bg'></div>
@@ -19,20 +18,26 @@ const Wears = () => {
 </section>
 
 <section>
-        <div className="Wears-section">
+        <div className="wears-section">
         <Title name= 'Fiesta' title='Wears'/>
-            <div className="container">
-    {allData.Wears.map(item => (
-        <div className="wears-card" >
-         <Product
-         id = {item.id}
-         title= {item.title}
-         image= {item.image}
-         rating= {item.rating}
-         price= {item.price}
-           />
-            </div>
-    ))}
+            <div className="container wears-card my-5">
+    {wears.map((item, index )=> {
+        let { id, title, price, rating, image} = item;
+
+     return (
+        <div key={index} className="wearspage-card" >
+        <Product
+        id = {id}
+        title= {title}
+        image= {image}
+        rating= {rating}
+        price= {price}
+        //info= {info}
+          />
+           </div>
+     )
+
+     })}
    
 </div>
 

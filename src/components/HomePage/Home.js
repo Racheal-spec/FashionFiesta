@@ -5,11 +5,10 @@ import './Home.scss';
 import womanShopping from '../Img/woman-shopping.jpg';
 import Product from '../Product/Product';
 import { useStateValue } from '../Context/StateProvider';
-import { allData } from '../Data';
 
 
 const Home = () => {
-    const[homeData, setHomeData] = useStateValue(allData); 
+    const[{home}, dispatch] = useStateValue(); 
     return(
         <div>
    <section className="hero-section">
@@ -32,7 +31,7 @@ const Home = () => {
 <div className="product-section">
 <Title name= 'Featured' title='Products' />
     <div className="container product-cards my-5">   
-    {allData.Home.map(item => ( 
+    {home.map(item => ( 
      <div className="home-card">
          <Product
           id = {item.id}

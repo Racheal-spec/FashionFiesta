@@ -2,8 +2,9 @@ import React from 'react';
 import './product.scss';
 import {Link} from 'react-router-dom';
 import { useStateValue } from '../Context/StateProvider';
+
  
-const Product = ({id, title, image, rating, price}) => {
+const Product = ({id, title, image, rating, price, info}) => {
   const[{carts}, dispatch] = useStateValue();
  
   const addToCart = () => {
