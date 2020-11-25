@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 import { useStateValue } from '../Context/StateProvider';
 
  
-const Product = ({id, title, image, rating, price, info}) => {
-  const[{carts}, dispatch] = useStateValue();
+const Product = ({id, title, image, rating, price}) => {
+  const[dispatch] = useStateValue();
  
   const addToCart = () => {
     dispatch({

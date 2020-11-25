@@ -22,7 +22,7 @@ const Bags = () => {
         <Title name= 'Fiesta' title='Bags'/> 
             <div className="container bags-card my-5">       
    {bags.map((item) => (
-        <div className="card">
+        <div className="card" key={item.id}>
         <Product
          id = {item.id}
          title= {item.title}

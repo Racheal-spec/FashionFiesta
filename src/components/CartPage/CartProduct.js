@@ -4,7 +4,7 @@ import './Cart.scss';
 
 
 const CartProduct = ({id, title, image, price, rating}) => {
- const [{ carts }, dispatch] = useStateValue();
+ const [dispatch] = useStateValue();
     
 const removeFromCart = () => {
 dispatch({

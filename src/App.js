@@ -15,7 +15,7 @@ import Details from './components/DetailsPage/Details';
 const App = () => {
   return(
     <Router>
-   <div className = 'App'>
+   <div className ='App'>
      <Header />
      <Switch>
   <Route path= '/' exact component = {Home} />

@@ -56,12 +56,12 @@ export const home =  [
         image: "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21632/133515/D254E32F-E36E-479E-86D3-185E48A78288__82279.1605370560.jpg?c=2"
     },
     {
-        id: "123419",
+        id: "1239419",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 350,
         rating: 4,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-        image: "https://m.media-amazon.com/images/I/81zLvLeQoTL._AC_UL480_FMwebp_QL65_.jpg"
+        image: "https://m.media-amazon.com/images/I/61T-mm3AkcL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
         id: "123309",

@@ -17,6 +17,7 @@ const[{ carts }] = useStateValue();
         <h2>Your Shopping Cart</h2>
         
         {carts.map((item) => (
+            <div className="cart-div" key={item.id}>
           <CartProduct 
           id={item.id}
           title={item.title}
@@ -24,7 +25,8 @@ const[{ carts }] = useStateValue();
           price={item.price}
           rating={item.rating}
           
-          />   
+          />  
+          </div> 
       ))}
         </div>
 )}

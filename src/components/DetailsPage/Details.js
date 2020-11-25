@@ -32,7 +32,7 @@ const SingleDetail = ({ title, image, price, rating, info}) => {
     )
 }
 const Details = () => {
-    const[{ wears, home, watches, bags }, dispatch] = useStateValue();
+    const[{ wears, home, watches, bags }] = useStateValue();
     let { id } = useParams();
 
     if(id){

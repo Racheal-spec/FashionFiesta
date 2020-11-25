@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect ,useState } from 'react';
 import {Link} from 'react-router-dom';
 import homelogo from '../Img/logo_3.png';
 import './Header.scss';
@@ -12,14 +12,14 @@ const Header = () => {
 //click function
 const[click, setClick] = useState(false);
 
-
 const closeMenu = () => setClick(false);
-const handleClick = () => {
-   setClick(!click);      
-}
 
 useEffect(() => {
-    handleClick();
+    const handleClick = async () => {
+        setClick(!click);      
+     }
+
+  handleClick();
 }, [])
 
 
@@ -67,7 +67,7 @@ useEffect(() => {
  {/*<div className= 'menu-icon' onClick={handleClick}>
      <i className= {click ? 'fas fa-bars': 'fas fa-times'}/>
    </div>*/}
- </div>
+   </div>
 
    </nav>
     )
