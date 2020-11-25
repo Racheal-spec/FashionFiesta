@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Nav from './components/NavSection/Nav';
-import Login from './components/LoginPage/Login';
-import Register from './components/RegisterPage/Register';
+import Header from './components/HeaderSection/Header';
 import Home from './components/HomePage/Home';
 import Wears from './components/WearsPage/Wears';
 import Watches from './components/WatchesPage/Watches';
@@ -18,11 +16,9 @@ const App = () => {
   return(
     <Router>
    <div className = 'App'>
-     <Nav />
+     <Header />
      <Switch>
   <Route path= '/' exact component = {Home} />
-  <Route path= '/Login' component = {Login} />
-  <Route path= '/Register' component = {Register} />
   <Route path= '/Wears' component = {Wears} />
   <Route path= '/Watches' component = {Watches} />
   <Route path= '/Bags' component = {Bags} />
