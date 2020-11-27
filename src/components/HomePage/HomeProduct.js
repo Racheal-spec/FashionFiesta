@@ -4,27 +4,27 @@ import { useStateValue } from '../Context/StateProvider';
 import Title from '../title';
 
 const HomeProduct = () => {
-    const[{home}] = useStateValue(); 
+    const[{homes}] = useStateValue(); 
 
     return(
         <div>
         <section>
         <div className="product-section">
         <Title name= 'Featured' title='Products' />
-            <div className="container product-cards my-5">   
-            {home.map((item) => ( 
-                <div className="home-card" key={item.id}>
-                    <Product 
+        <div className="container product-cards my-5">   
+        {homes.map((item) => ( 
+                <div className="home-card" key= {item.id}>
+                     <Product
                      id = {item.id}
-                    title= {item.title}
-                    image= {item.image}
-                    rating= {item.rating}
-                    price= {item.price}
-                    />
-                </div> 
-             
-               ))}
-            
+                     title= {item.title}
+                     image= {item.image}
+                     rating= {item.rating}
+                     price= {item.price}
+                   />
+                   
+    </div>
+                
+        ))}
         </div>
         </div>
         </section>

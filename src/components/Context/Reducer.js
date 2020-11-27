@@ -6,7 +6,7 @@ import { bags } from '../../Data/bags';
 export const initialState = {
     carts: [],
     wears: wears,
-    home: home,
+    homes: home,
     watches: watches,
     bags: bags,
     user: null   
@@ -27,23 +27,20 @@ const reducer = (state, action) => {
             };
 
         case 'REMOVE_FROM_CART':
-
+           
+           let newCarts = [...state.carts];
             const index = state.carts.findIndex(
-                (cartsItem) => cartsItem.id === action.item.id
+                (cartsItem) => cartsItem.id === action.id
             );
-            let newCarts = [...state.carts];
-
-            if (index >= 0) {
-                newCarts.splice(index, 1)
-            } else {
-                console.warn(`Can't remove product (id: ${action.item.id}) as it's not in basket!`)
-            }
-
+             if (index >= 0) {
+                 newCarts.splice(index, 1);
+              } else {
+                  console.warn(`Can't remove product (id: ${action.id}) as it's not in basket!`);
+           }
             return {
-                ...state, carts: newCarts
-            }
-
-   
+                ...state,
+                carts: newCarts,
+            };
         default:
             return state;
     }   

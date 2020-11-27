@@ -9,10 +9,10 @@ const HomeHero = () => {
 <section className="hero-section">
    <div className="hero-wrapper">
        <div className="row home-bg">
-       <div className='col-lg-6 col-12'>
+       <div className='col-12 col-md-6 col-lg-6'>
     <img src={womanShopping} className="home-img-bg" alt="white-girl" />
     </div>
-    <div className='col-lg-6 col-12 hero-text'>
+    <div className='col-12 col-md-6  col-lg-6 hero-text'>
         <h2>Your One Stop Shop!</h2>
         <p>Sed voluptatem accusantium doloremque eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
         Sed voluptatem accusantium doloremque eaque ipsa

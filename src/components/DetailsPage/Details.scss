@@ -6,9 +6,15 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .details{
-    min-height: 80vh;
     padding: 50px 0;
     background-color: rgba(128, 128, 128, 0.164);
+    .row{
+        @media screen and (min-width: 768px){
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        }      
+    }
     img{
         width: 100%;
         height: 350px;
@@ -17,14 +23,22 @@ $white: #ffffff;
     .second-column{
         text-align: left;
         padding-right: 80px;
+            @media screen and (max-width: 767px) {
+                margin-left: 50px;
+                margin-top: 40px;
+             }
      strong {
          color: $mainGreen;
      }
      h4{
          margin: 13px 0;
      }
-    .fa-star{
-        color: gold;
-    }    
+     .product-rating{
+         display: flex;
+         .fa-star{
+            color: gold;
+            margin: 0 2px;
+        } 
+     }   
     }
 }

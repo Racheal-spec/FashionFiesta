@@ -1,4 +1,4 @@
-import React, {useEffect ,useState } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import homelogo from '../Img/logo_3.png';
 import './Header.scss';
@@ -8,22 +8,8 @@ import { useStateValue } from '../Context/StateProvider';
 const Header = () => {
     const[{carts }] = useStateValue();
     console.log(carts); 
- 
-//click function
-const[click, setClick] = useState(false);
-
-const closeMenu = () => setClick(false);
-
-useEffect(() => {
-    const handleClick = async () => {
-        setClick(!click);      
-     }
-
-  handleClick();
-}, [])
 
 
-   
    return(
 <nav className='navs'>
  <div className = 'firstnav'>
@@ -46,27 +32,22 @@ useEffect(() => {
 </div>
 
 <div className = 'secondnav'>
-     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        <Link to='/' className='nav-links' onClick={closeMenu}>
+     <ul>
+        <Link to='/' className='nav-links'>
         <li>Home</li>
         </Link>
-        <Link to='/Wears' className='nav-links' onClick={closeMenu}>
+        <Link to='/Wears' className='nav-links'>
         <li>FiestaWears</li>
         </Link>
-        <Link to='/Watches' className='nav-links' onClick={closeMenu}>
+        <Link to='/Watches' className='nav-links'>
         <li>FiestaWatches</li>
         </Link>
-        <Link to='/Bags' className='nav-links' onClick={closeMenu}>
+        <Link to='/Bags' className='nav-links'>
         <li>FiestaBags</li>
         </Link>
         
 
      </ul>
-      {/*menu icon div*/}
-
- {/*<div className= 'menu-icon' onClick={handleClick}>
-     <i className= {click ? 'fas fa-bars': 'fas fa-times'}/>
-   </div>*/}
    </div>
 
    </nav>

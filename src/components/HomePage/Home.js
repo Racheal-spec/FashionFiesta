@@ -6,12 +6,12 @@ import HomeFixed from './HomeFixed';
 import './Home.scss';
 
 
-const Home = () => {
+const Home = ({id}) => {
   
     return(
     <div className="home-page">
-   <HomeHero />
-   <HomeProduct />
+   <HomeHero  />
+   <HomeProduct/>
    <HomeFixed />
         </div> 
 

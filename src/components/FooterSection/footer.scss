@@ -68,3 +68,37 @@ footer{
         }
     }
 }
+
+@media screen and (max-width: 600px){
+    footer{
+        height: 62vh;
+        padding: 200px 0;
+        .footer-form{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px){
+    footer{
+     height: 70vh;
+     padding: 220px 0;
+        .footer-form{
+            margin: 0 10px;
+            width: 80%;
+            position: absolute;
+            top: -6%;
+            right: 0;
+            left: 55px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    .footer-form{
+        top: 40% !important;
+    }
+    .third-footer{
+        margin-top: 30px;
+    }
+}

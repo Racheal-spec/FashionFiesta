@@ -17,10 +17,14 @@ const SingleDetail = ({ title, image, price, rating, info}) => {
             <h5><strong>Title: </strong>{title}</h5>
             <h5><strong>Price: </strong><small>$</small>{price}</h5>
             <h5>
-            <strong>Rating: </strong>
-            {Array(rating).fill().map(() => (
-            <i class="fas fa-star"></i>
-            ))}
+           <div className="product-rating">
+           <strong>Rating: </strong>
+            {Array(rating).fill().map((_, i) => (
+             <div key={i}>
+             <i className="fas fa-star"></i>
+             </div>
+               ))}
+           </div>
             </h5>
             <p><strong>Some info about the product: </strong>{info}</p>
             </div>
@@ -32,31 +36,30 @@ const SingleDetail = ({ title, image, price, rating, info}) => {
     )
 }
 const Details = () => {
-    const[{ wears, home, watches, bags }] = useStateValue();
+    const[{ wears, homes, watches, bags }] = useStateValue();
     let { id } = useParams();
 
     if(id){
         
         let wear = wears.find(wear => wear.id === id);
-        let homes = home.find(homedetail => homedetail.id === id);
+        let home = homes.find(homedetail => homedetail.id === id);
         let watch = watches.find(watchdetail => watchdetail.id === id);
         let bag = bags.find(bagdetail => bagdetail.id === id);
 
         if(wear){
-            return <SingleDetail {...wear} />
+            return <SingleDetail {...wear} key={id} />
         }
-        if(homes){
-            return <SingleDetail  {...homes} />
+        if(home){
+            return <SingleDetail  {...home} key={id} />
         }
         if(watch){
-            return <SingleDetail  {...watch} />
+            return <SingleDetail  {...watch} key={id} />
         }
         if(bag){
-            return <SingleDetail  {...bag} />
+            return <SingleDetail  {...bag} key={id} />
         }
     
     }
-    return <div>Invalid ID</div>
 }
 
 export default Details;

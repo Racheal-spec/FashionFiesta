@@ -26,8 +26,11 @@ $white: #ffffff;
             transform: scale(1.16);
         }
     } 
-    .fa-star{
-        color: gold;
+    .product-rating{
+        display: flex;
+        .fa-star{
+            color: gold;
+        }
     }
     button{
         border: none;

@@ -10,8 +10,6 @@ const Nav = () => {
     console.log(carts); 
  
 
-
-
    
    return(
 <nav className='navs navbar-desktop'>

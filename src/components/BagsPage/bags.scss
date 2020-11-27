@@ -5,7 +5,6 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .bags-herosection{
-    height: 100vh;
     .bags-bg{
         height: 380px;
         width: 800px;
@@ -14,10 +13,14 @@ $white: #ffffff;
         background-position: top;
         background-repeat: no-repeat; 
         background-size: contain;
+        @media screen and (max-width: 600px){
+            background-size: cover;
+        }
 }
 }
 
 .bags-section{
+    padding: 50px 0;
     .bags-card{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

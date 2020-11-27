@@ -1,6 +1,6 @@
 export const home =  [
     {
-        id: "123411",
+        id: "1213411",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 11.96,
         rating: 5,
@@ -8,7 +8,7 @@ export const home =  [
         image: "https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/clothingv2._V519740116_.jpg"
     },
     {
-        id: "123422",
+        id: "1236422",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 140,
         rating: 4,
@@ -16,7 +16,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/71qBg08NjiL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "123413",
+        id: "1231413",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 12.5,
         rating: 5,
@@ -24,7 +24,7 @@ export const home =  [
         image: "https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/DURM-2B6359B8D6DD842B._V531821792_.jpg"
     },
     {
-        id: "123409",
+        id: "1238409",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 199,
         rating: 5,
@@ -32,7 +32,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/71o-aw5MwfL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "123402",
+        id: "1236402",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 33,
         rating: 5,
@@ -40,7 +40,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/81xCpb+RC1L._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "123419",
+        id: "1239419",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 350,
         rating: 4,
@@ -48,7 +48,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/81zLvLeQoTL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "123306",
+        id: "1230306",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 229,
         rating: 5,
@@ -56,7 +56,7 @@ export const home =  [
         image: "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21632/133515/D254E32F-E36E-479E-86D3-185E48A78288__82279.1605370560.jpg?c=2"
     },
     {
-        id: "1239419",
+        id: "1235419",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 350,
         rating: 4,
@@ -64,7 +64,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/61T-mm3AkcL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "123309",
+        id: "121309",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 450,
         rating: 5,
@@ -72,7 +72,7 @@ export const home =  [
         image: "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21649/133584/A211A6B0-A018-477D-A6F5-C7FAF8647AF2__58902.1605548418.jpg?c=2"
     },
     {
-        id:"123420",
+        id:"125420",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 50,
         rating: 5,
@@ -80,7 +80,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/81QJ1TiYhGL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "123421",
+        id: "129421",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 580,
         rating: 5,
@@ -88,7 +88,7 @@ export const home =  [
         image: "https://m.media-amazon.com/images/I/61dwYndNEbL._AC_UL480_FMwebp_QL65_.jpg"
     },
     {
-        id: "122422",
+        id: "120422",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 450,
         rating: 5,

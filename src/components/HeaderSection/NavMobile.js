@@ -11,7 +11,7 @@ const Nav = () => {
 
    
    return(
-<nav className='navs '>
+<nav className='navs'>
  <div className = 'firstnav'>
 <Link to='/'>
 <img src= {homelogo} className='logo-img' alt='logo'/>

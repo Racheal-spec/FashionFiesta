@@ -4,17 +4,16 @@ import './Cart.scss';
 
 
 const CartProduct = ({id, title, image, price, rating}) => {
- const [dispatch] = useStateValue();
-    
+ const [carts, dispatch] = useStateValue();
+  console.log(carts);
 const removeFromCart = () => {
 dispatch({
     type: "REMOVE_FROM_BASKET",
-    id: id,
+    id: id
 });
   }
   
   return(
-
 <div className="cart-product">
    <div className="cart-img">
    <img src={image} alt="" />
@@ -27,9 +26,11 @@ dispatch({
     <strong>{price}</strong>
     </p>  
 <div className="product-rating">
- {Array(rating).fill().map(() => (
-   <i class="fas fa-star"></i>
- ))}
+{Array(rating).fill().map((_, i) => (
+  <div key={i}>
+  <i className="fas fa-star"></i>
+</div>
+  ))}
   </div>
   <div className="button-div">
 <button onClick={removeFromCart}>Remove from Cart</button>

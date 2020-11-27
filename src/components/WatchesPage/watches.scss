@@ -5,7 +5,6 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .watches-herosection{
-    height: 100vh;
     .watches-bg{
         height: 380px;
         width: 800px;
@@ -14,10 +13,14 @@ $white: #ffffff;
         background-position: top;
         background-repeat: no-repeat; 
         background-size: contain;
+        @media screen and (max-width: 600px){
+            background-size: cover;
+        }
 }
 }
 
 .watches-section{
+    padding: 50px 0;
     .watches-card{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
