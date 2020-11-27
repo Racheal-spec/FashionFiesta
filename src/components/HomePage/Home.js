@@ -6,7 +6,7 @@ import HomeFixed from './HomeFixed';
 import './Home.scss';
 
 
-const Home = ({id}) => {
+const Home = () => {
   
     return(
     <div className="home-page">

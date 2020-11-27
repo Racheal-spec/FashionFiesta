@@ -6,7 +6,7 @@ $white: #ffffff;
 
 footer{
     background-color: $mainGreen;
-    height: 50vh;
+    height: 100%;
     padding: 50px 0;
     width: 100%;
     position: relative;
@@ -71,8 +71,10 @@ footer{
 
 @media screen and (max-width: 600px){
     footer{
-        height: 62vh;
-        padding: 200px 0;
+        padding: 100px 0;
+         .first-footer{
+             margin-top: 80px;
+         }
         .footer-form{
             width: 80%;
         }
@@ -81,8 +83,10 @@ footer{
 
 @media screen and (min-width: 601px) and (max-width: 767px){
     footer{
-     height: 70vh;
-     padding: 220px 0;
+        padding: 100px 0;
+        .first-footer{
+            margin-top: 80px;
+        }
         .footer-form{
             margin: 0 10px;
             width: 80%;

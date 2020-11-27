@@ -26,11 +26,13 @@
     font-size: 1.2rem;
 } 
 }
-.product-rating .fa-star {
-    color: gold;
-    margin: 10px 0;
-  }
-  
+  .product-rating{
+    display: flex;
+    .fa-star{
+       color: gold;
+       margin: 10px 2px;
+    }
+}    
  .checkout h2{
 padding: 40px 0;
 color: #3BB7D3;

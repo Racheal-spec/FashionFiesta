@@ -17,10 +17,10 @@ const Header = () => {
 <img src= {homelogo} className='logo-img' alt='logo'/>
 </Link>
 <ul className="ml-auto">
-<form className="second-li">
+{/*<form className="second-li">
     <input type='search' className='searchList'></input>
     <button className='navSearch' placeholder='Search an item'>Search</button>
-    </form>
+   </form>*/}
    <div className="cart-icon">
    <Link to='/Cart'>
    <li><i className='fas fa-shopping-cart'></i>
