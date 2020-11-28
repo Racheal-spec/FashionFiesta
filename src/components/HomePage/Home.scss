@@ -6,7 +6,6 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .hero-section{
-    padding: 40px 0;
     position: relative;
    .hero-wrapper{
     display: flex;
@@ -40,6 +39,41 @@ $white: #ffffff;
     }
 
 }
+
+//search bar
+
+.form-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .home-form{
+        padding: 20px 0;
+        width: 100%;
+    }
+}
+.searchList{
+    padding: 4px;
+    border: 2px solid $mainPink;
+    width: 25%;
+    background-color: rgba(128, 128, 128, 0.301);
+    &:focus{
+      outline: none;
+    }
+  }
+
+.navSearch{
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+    background-color: $mainPink;
+    border: none;
+    transition:all 0.4s ease-in;
+    &:hover{
+      background-color: $secondaryGreen;
+    }
+  }  
+  
+
 .main-button{
     border: none;
     background-color: $mainPink;
@@ -90,6 +124,15 @@ $white: #ffffff;
 }
 
 @media screen and (max-width: 600px){
+    .home-form{
+        .searchList{
+            width: 80%;
+        } 
+        .navSearch{
+            width: 80%;
+        }
+    }
+    
     .hero-text{
         text-align: center;
         display: flex;
@@ -100,7 +143,7 @@ $white: #ffffff;
         p, h2{
             width: 100%;
             text-align: center;
-        }
+        }   
     }
 }
 

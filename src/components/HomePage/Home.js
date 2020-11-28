@@ -3,7 +3,6 @@ import './Home.scss';
 import HomeHero from './HomeHero';
 import HomeProduct from './HomeProduct';
 import HomeFixed from './HomeFixed';
-import './Home.scss';
 
 
 const Home = () => {

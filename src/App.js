@@ -10,10 +10,14 @@ import Bags from './components/BagsPage/Bags';
 import Cart from './components/CartPage/Cart';
 import Footer from './components/FooterSection/Footer';
 import Details from './components/DetailsPage/Details';
+import BackToTop from './components/BackToTop';
 
 
 const App = () => {
+
+
   return(
+
     <Router>
    <div className ='App'>
      <Header />
@@ -27,9 +31,12 @@ const App = () => {
   <Route path= '/Details/:id' component = {Details} />
 
   </Switch>
+  <BackToTop />
     <Footer />
    </div>
    </Router>
   )
+
+ 
 }
 export default App;

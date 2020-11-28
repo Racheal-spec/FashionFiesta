@@ -8,6 +8,20 @@ $white: #ffffff;
 .details{
     padding: 50px 0;
     background-color: rgba(128, 128, 128, 0.164);
+    button{
+        border: none;
+        background-color: $mainPink;
+        color: $white;
+        font-weight: bold;
+        width: 40%;
+        padding: 6px 10px;
+        box-shadow: 0px 2px 0px 2px $secondaryGreen;
+        transition: all 0.4s ease-in;
+    &:hover{
+        text-decoration: none;
+        background-color: $secondaryGreen;
+    }    
+    }
     .row{
         @media screen and (min-width: 768px){
          display: flex;

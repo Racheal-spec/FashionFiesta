@@ -1,14 +1,16 @@
 import React from 'react';
 import { useStateValue } from '../Context/StateProvider';
 import './Cart.scss';
+import {Link} from 'react-router-dom';
 
 
 const CartProduct = ({id, title, image, price, rating}) => {
  const [carts, dispatch] = useStateValue();
   console.log(carts);
+
 const removeFromCart = () => {
 dispatch({
-    type: "REMOVE_FROM_BASKET",
+    type: "REMOVE_FROM_CART",
     id: id
 });
   }
@@ -32,6 +34,9 @@ dispatch({
 </div>
   ))}
   </div>
+  <Link to={`Details/${id}`}>
+  <p className="check-details">Check Product details here</p>
+  </Link>
   <div className="button-div">
 <button onClick={removeFromCart}>Remove from Cart</button>
 </div>

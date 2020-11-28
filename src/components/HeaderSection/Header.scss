@@ -23,7 +23,8 @@ $white: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $white;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 5px 0px $mainGreen;
     padding: 10px 0;
     ul{
       display: flex;
@@ -33,7 +34,7 @@ $white: #ffffff;
       margin: 0 20px;
      } 
      a{
-       color: $secondaryGreen;
+       color: $mainGreen;
        font-weight: bold;
        transition: all 0.4s ease-in;
        &:hover{
@@ -43,52 +44,7 @@ $white: #ffffff;
      }
     }
   }
-  .secondnav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $mainGreen;
-    ul{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      list-style: none;
-      padding: 10px 0;
-      margin-top: 10px;
-      width: 60%;
-      a{
-        color: $white;
-        font-weight: bold;
-        transition: all 0.4s ease-in;
-        &:hover{
-          text-decoration: none;
-          color: $mainPink;
-        }
-      }
-    }
-  }
- 
-//nav search bar
-.searchList{
-  padding: 4px;
-  border: 2px solid $mainPink;
-  background-color: rgba(128, 128, 128, 0.301);
-  &:focus{
-    outline: none;
-  }
-}
-.navSearch{
-  padding: 6px;
-  color: white;
-  font-weight: bold;
-  background-color: $mainPink;
-  border: none;
-  transition:all 0.4s ease-in;
-  &:hover{
-    background-color: $secondaryGreen;
-  }
-}  
-
+  
 
 @media screen and (max-width: 600px){
   .navs{

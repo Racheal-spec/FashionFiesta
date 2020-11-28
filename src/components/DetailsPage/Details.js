@@ -4,8 +4,22 @@ import { useStateValue } from '../Context/StateProvider';
 import './Details.scss';
 
 
-const SingleDetail = ({ title, image, price, rating, info}) => {
-   
+const SingleDetail = ({id, title, image, price, rating, info}) => {
+    const[, dispatch] = useStateValue();
+    const addToCart = () => {
+        dispatch({
+          type:'ADD_TO_CART',
+          item: {
+            id: id,
+            title: title,
+            image: image,
+            price: price,
+            rating: rating,
+          },
+        });
+       
+    } 
+
     return (
         <div>
             <div className="container my-5 details">
@@ -26,13 +40,16 @@ const SingleDetail = ({ title, image, price, rating, info}) => {
                ))}
            </div>
             </h5>
-            <p><strong>Some info about the product: </strong>{info}</p>
+            <p><strong>Some info about the product: </strong>{info}</p> 
+         
+            <button onClick={addToCart}>ADD TO CART</button>
+           
             </div>
              </div>
-
+           
             </div>
           
-        </div>
+        </div>/*end of container div*/
     )
 }
 const Details = () => {

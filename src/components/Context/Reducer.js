@@ -29,15 +29,16 @@ const reducer = (state, action) => {
         case 'REMOVE_FROM_CART':
            
            let newCarts = [...state.carts];
-            const index = state.carts.findIndex(
+            const indexVal = state.carts.findIndex(
                 (cartsItem) => cartsItem.id === action.id
             );
-             if (index >= 0) {
-                 //newCarts.splice(index, 1);
-                 newCarts.filter(index, 1);
-              } else {
-                  console.warn(`Can't remove product (id: ${action.id}) as it's not in basket!`);
-           }
+            //let newCarts =  oldCarts.filter((product, index) => 
+            //index !== indexVal);
+            if (indexVal >= 0) {
+                newCarts.splice(indexVal, 1);
+             } else {
+                 console.warn(`Can't remove product (id: ${action.id}) as it's not in basket!`);
+          }
             return {
                 ...state,
                 carts: newCarts,
