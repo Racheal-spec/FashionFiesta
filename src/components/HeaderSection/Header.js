@@ -15,15 +15,12 @@ const Header = () => {
     const closeMenu = () => {
       setClick(!click);
     }
-
     const handleClick = () => {
-     setClick(!click);
-    }
-
-    useEffect(()=> {
-       handleClick();
-    },[])
-
+      setClick(!click);
+     }
+   useEffect(() =>{
+     handleClick();
+   }, [])// eslint-disable-line react-hooks/exhaustive-deps
    return(
 <nav className='navs'>
  <div className = 'firstnav'>
