@@ -6,7 +6,6 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .hero-section{
-    position: relative;
    .hero-wrapper{
     display: flex;
     align-items: center;
@@ -14,18 +13,13 @@ $white: #ffffff;
    }
     .hero-text{
         text-align: left;
-        position: absolute;
-        right: -4%;
-        p{
-            width: 80%;
-        }
+        margin: 10px 0;
     }
     .home-bg{
        background-color:#3bb7d398;
        display: flex;
        align-items: center;
-       justify-content: right;
-       width: 90%;
+       width: 80%;
        height: 100%;
        p, h2{
            color: white;
@@ -35,7 +29,7 @@ $white: #ffffff;
     height: 100%;
     width: 100%;
     filter: brightness(60%);
-    margin: 20px;
+    margin: 20px 0px;
     }
 
 }
@@ -57,7 +51,7 @@ $white: #ffffff;
     width: 25%;
     background-color: rgba(128, 128, 128, 0.301);
     &:focus{
-      outline: none;
+      outline: $mainGreen;
     }
   }
 
@@ -126,10 +120,10 @@ $white: #ffffff;
 @media screen and (max-width: 600px){
     .home-form{
         .searchList{
-            width: 80%;
+            width: 60%;
         } 
         .navSearch{
-            width: 80%;
+            width: 60%;
         }
     }
     
@@ -159,6 +153,9 @@ $white: #ffffff;
             width: 100%;
             text-align: center;
         }
+    }
+    .searchList{
+        width: 35%;
     }
 }
 

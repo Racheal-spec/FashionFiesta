@@ -4,6 +4,7 @@ import womanShopping from '../Img/woman-shopping.jpg';
 
 const HomeHero = () => {
 
+
     return(
 <div>
 <section className="hero-section">
