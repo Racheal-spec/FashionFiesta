@@ -9,7 +9,6 @@ const Header = () => {
     const[{carts }] = useStateValue();
     console.log(carts); 
 
-
     const[click, setClick] = useState(false);
 
     const closeMenu = () => {
@@ -21,6 +20,7 @@ const Header = () => {
    useEffect(() =>{
      handleClick();
    }, [])// eslint-disable-line react-hooks/exhaustive-deps
+   
    return(
 <nav className='navs'>
  <div className = 'firstnav'>
