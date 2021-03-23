@@ -19,8 +19,12 @@ $white: #ffffff;
        background-color:#3bb7d398;
        display: flex;
        align-items: center;
-       width: 80%;
+       width: 100%;
        height: 100%;
+       padding: 30px 60px;
+       @media screen and (max-width: 600px) {
+        padding: 0;
+       }
        p, h2{
            color: white;
        }
@@ -33,51 +37,17 @@ $white: #ffffff;
     }
 
 }
-
-//search bar
-
-.form-row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .home-form{
-        padding: 20px 0;
-        width: 100%;
-    }
-}
-.searchList{
-    padding: 4px;
-    border: 2px solid $mainPink;
-    width: 25%;
-    background-color: rgba(128, 128, 128, 0.301);
-    &:focus{
-      outline: $mainGreen;
-    }
-  }
-
-.navSearch{
-    padding: 6px;
-    color: white;
-    font-weight: bold;
-    background-color: $mainPink;
-    border: none;
-    transition:all 0.4s ease-in;
-    &:hover{
-      background-color: $secondaryGreen;
-    }
-  }  
-  
-
 .main-button{
     border: none;
     background-color: $mainPink;
     color: $white;
     font-weight: bold;
     padding: 6px 14px;
-    box-shadow: 0px 2px 0px 2px white;
+    box-shadow: 0px 2px 0px 2px $secondaryGreen;
+    transition: all 0.5s ease-in;
 &:hover{
     text-decoration: none;
-    background-color: $mainGreen;
+    background-color: $secondaryGreen;
 }
 }
 /*fixed background section*/
@@ -90,25 +60,54 @@ $white: #ffffff;
  }   
     .overlay{
         text-align: center;
-        margin-top: 14%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10%;
+        @media screen and (max-width:600px) {
+            width: 98%;
+        }
         h2{
             color: white;
             width: 100%;
+            font-weight: bold;
         }
     }
     .img-bg{
         height: 400px;
         width: 800px;
-        background-image: linear-gradient(to bottom,  #d69fd8d2, #3bb7d334),url(../Img/Atm-card.jpg);
-        background-attachment: fixed;
-        background-position: top;
+        background-image: linear-gradient(to bottom,  #d69fd8e8, #3bb7d3c4),url(../Img/Atm-card.jpg);
+        background-position: top left;
         background-repeat: no-repeat; 
         background-size: cover;
+        @media screen and (max-width:600px) {
+            height: 300px;
+        }
 }
 }
  
+/*product slide*/
+.product-slide{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media screen and(max-width:600px){
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .product-magic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .magic-link{
+            color: $secondaryGreen;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    }
+}
+
 .product-section{
-    padding: 50px 0;
+    padding: 30px 0;
     .product-cards{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -118,21 +117,12 @@ $white: #ffffff;
 }
 
 @media screen and (max-width: 600px){
-    .home-form{
-        .searchList{
-            width: 60%;
-        } 
-        .navSearch{
-            width: 60%;
-        }
-    }
     .hero-text{
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-       
         p, h2{
             width: 100%;
             text-align: center;
@@ -152,9 +142,6 @@ $white: #ffffff;
             width: 100%;
             text-align: center;
         }
-    }
-    .searchList{
-        width: 35%;
     }
 }
 

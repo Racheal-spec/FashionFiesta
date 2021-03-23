@@ -36,8 +36,17 @@
     font-style: italic;
     font-weight: bold;
 } 
-}   
- .checkout h2{
-padding: 40px 0;
-color: #3BB7D3;
- } 
+} 
+
+.checkout img{
+        max-width: 30%;
+        padding-bottom: 30px;
+@media screen and (max-width:600px) {
+    padding-bottom: 100px;
+    max-width: 50%;
+}        
+}
+    .checkout h2{
+        padding: 40px 0;
+        color: #3BB7D3;
+         } 

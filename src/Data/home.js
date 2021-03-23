@@ -24,6 +24,18 @@ export const home =  [
         image: "https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/DURM-2B6359B8D6DD842B._V531821792_.jpg"
     },
     {
+        id:"125420",
+        title: "Sed voluptatem accusantium doloremque eaque ipsa",
+        price: 50,
+        rating: 5,
+        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
+        image: "https://m.media-amazon.com/images/I/81QJ1TiYhGL._AC_UL480_FMwebp_QL65_.jpg"
+    }
+];
+
+
+export const home2 = [
+    {
         id: "1238409",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 199,
@@ -54,7 +66,11 @@ export const home =  [
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
         image: "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21632/133515/D254E32F-E36E-479E-86D3-185E48A78288__82279.1605370560.jpg?c=2"
-    },
+    }
+]
+
+
+export const home3 = [
     {
         id: "1235419",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
@@ -72,27 +88,22 @@ export const home =  [
         image: "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21649/133584/A211A6B0-A018-477D-A6F5-C7FAF8647AF2__58902.1605548418.jpg?c=2"
     },
     {
-        id:"125420",
+        id: "123303",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
-        price: 50,
-        rating: 5,
+        price: 410,
+        rating: 4,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-        image: "https://m.media-amazon.com/images/I/81QJ1TiYhGL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
+        image: "https://m.media-amazon.com/images/I/41AyziEKfWL._AC_SR320,400_.jpg"
+       }
+   
+    /*
+  {
         id: "129421",
         title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 580,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
         image: "https://m.media-amazon.com/images/I/61dwYndNEbL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        id: "120422",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
-        price: 450,
-        rating: 5,
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-        image: "https://m.media-amazon.com/images/I/61g9z2pYf4L._AC_UL480_FMwebp_QL65_.jpg"
     }
-];
+    */
+]

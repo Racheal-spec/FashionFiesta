@@ -22,7 +22,7 @@ export const wears = [
     price: 329,
     rating: 4,
     info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-    image: "https://cdn.shopify.com/s/files/1/1132/3440/products/image_1a3aa333-db55-4aef-8a76-06c8e6a3b161_large.jpg?v=1592191839"
+    image: "https://m.media-amazon.com/images/I/41DwuJTQ21L._AC_SR320,400_.jpg"
    },
    {
     id: "123303",
@@ -30,7 +30,7 @@ export const wears = [
     price: 410,
     rating: 4,
     info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-    image: "https://cdn.shopify.com/s/files/1/1132/3440/products/image_b36f2338-2031-4007-96fc-00a8c4a3f033_large.jpg?v=1602461539"
+    image: "https://m.media-amazon.com/images/I/41AyziEKfWL._AC_SR320,400_.jpg"
    },
    {
     id: "123304",
@@ -62,7 +62,7 @@ export const wears = [
     price: 399,
     rating: 5,
     info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-    image: "https://cdn.shopify.com/s/files/1/1132/3440/products/00745897-389F-4463-BFDC-C443C08506BF_large.jpeg?v=1591944034"
+    image: "https://m.media-amazon.com/images/I/51q3oKyoS4L._AC_SR160,200_.jpg"
    },
    {
     id: "123308",
@@ -70,7 +70,7 @@ export const wears = [
     price: 340,
     rating: 4,
     info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-    image: "https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/550x705/products/21658/133276/shopdressup_striped_knit_cardigan-6__27683.1605537499.jpg?c=2"
+    image: "https://m.media-amazon.com/images/I/71IEWm3CHsL._MCnd_AC_UL480_FMwebp_QL65_.jpg"
    },
    {
     id: "123309",

@@ -1,6 +1,7 @@
 import React from 'react';
 import './product.scss';
 import {Link} from 'react-router-dom';
+//import ATM from '../Img/Atm-card.jpg';
 import { useStateValue } from '../Context/StateProvider';
 
  
@@ -20,11 +21,18 @@ const Product = ({id, title, image, rating, price}) => {
     });
    
 } 
+
+/*
+const addDefault = (e) => {
+   e.target.src = {ATM};
+}
+*/
 return(
   <React.Fragment>
 <div className="card mx-2">
-    <Link to={`Details/${id}`}>
+    <Link to={`Details/${id}`} className="product-link">
     <img src={image} alt="product" className="product-img"/>
+  
   <p className="product-title font-weight-bold">{title}</p>
   </Link>
 

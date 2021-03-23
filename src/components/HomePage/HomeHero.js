@@ -8,12 +8,6 @@ const HomeHero = () => {
     return(
 <div>
 <section className="hero-section">
-<div className="row form-row">
-       <form className="home-form">
-    <input type='search' className='searchList'></input>
-    <button className='navSearch' placeholder='Search an item'>Search</button>
-   </form>
-       </div>
    <div className="hero-wrapper">
        <div className="row home-bg">
        <div className='col-sm-12 col-md-6 col-lg-6'>
@@ -24,7 +18,6 @@ const HomeHero = () => {
         <p>Sed voluptatem accusantium doloremque eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
         Sed voluptatem accusantium doloremque eaque ipsa
         </p>
-        <button className="main-button">Shop here</button>
     </div>
        </div>
    </div>

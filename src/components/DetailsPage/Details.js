@@ -5,6 +5,7 @@ import './Details.scss';
 
 
 const SingleDetail = ({id, title, image, price, rating, info}) => {
+  
     const[, dispatch] = useStateValue();
     const addToCart = () => {
         dispatch({
@@ -52,6 +53,7 @@ const SingleDetail = ({id, title, image, price, rating, info}) => {
         </div>/*end of container div*/
     )
 }
+
 const Details = () => {
     const[{ wears, homes, watches, bags }] = useStateValue();
     let { id } = useParams();
