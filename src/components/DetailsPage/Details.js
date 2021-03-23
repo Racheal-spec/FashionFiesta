@@ -55,13 +55,15 @@ const SingleDetail = ({id, title, image, price, rating, info}) => {
 }
 
 const Details = () => {
-    const[{ wears, homes, watches, bags }] = useStateValue();
+    const[{ wears, homes,homes2, homes3, watches, bags }] = useStateValue();
     let { id } = useParams();
 
     if(id){
         
         let wear = wears.find(wear => wear.id === id);
         let home = homes.find(homedetail => homedetail.id === id);
+        let home2 = homes2.find(home2detail => home2detail.id === id);
+        let home3 = homes3.find(home3detail => home3detail.id === id);
         let watch = watches.find(watchdetail => watchdetail.id === id);
         let bag = bags.find(bagdetail => bagdetail.id === id);
 
@@ -70,6 +72,12 @@ const Details = () => {
         }
         if(home){
             return <SingleDetail  {...home} key={id} />
+        }
+        if(home2){
+            return <SingleDetail  {...home2} key={id} />
+        }
+        if(home3){
+            return <SingleDetail  {...home3} key={id} />
         }
         if(watch){
             return <SingleDetail  {...watch} key={id} />
