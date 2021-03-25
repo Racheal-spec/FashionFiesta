@@ -10,6 +10,9 @@ footer{
     padding: 50px 0;
     width: 100%;
     position: relative;
+    .wrapper{
+        padding: 0 50px;
+    }
     ul{
         list-style: none;
         li{
@@ -39,7 +42,7 @@ footer{
         background-color: $secondaryGreen;
         color: white;
         padding: 10px 10px;
-        margin: 0 40px;
+        margin: 0 60px;
         position: absolute;
         top: -10%;
         right: 0;
@@ -77,6 +80,7 @@ footer{
          }
         .footer-form{
             width: 80%;
+            margin: 0 35px;
         }
     }
 }

@@ -7,7 +7,7 @@ import './footer.scss';
 const Footer = () => {
     return(
 <footer>
-    <div className="container-fluid">
+    <div className="container-fluid wrapper">
         <div className="row">
 
     {/*First footer column*/} 

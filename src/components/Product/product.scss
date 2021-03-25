@@ -19,6 +19,9 @@ $white: #ffffff;
        &:hover{
         text-decoration: none;
     }
+    @media screen and (max-width: 600px) {
+       font-size: 0.8rem;
+         }
    }  
     img{
         max-width: 100%;
@@ -28,6 +31,9 @@ $white: #ffffff;
         &:hover{
             transform: scale(0.9);
         }
+        @media screen and (max-width: 600px) {
+            height: 100px;  
+            }
     } 
     .product-rating{
         display: flex;
@@ -47,6 +53,10 @@ $white: #ffffff;
     &:hover{
         text-decoration: none;
         background-color: $secondaryGreen;
-    }    
+    } 
+    @media screen and (max-width: 600px) {
+       width: 80%; 
+       padding: 4px 10px;
+        }   
     }
 }

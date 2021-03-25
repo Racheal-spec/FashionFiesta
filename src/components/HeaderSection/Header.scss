@@ -22,18 +22,24 @@ $white: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: $mainGreen;
     box-shadow: 0px 3px 5px 0px $mainGreen;
-    padding: 5px 0;
+    padding: 5px 50px;
+    @media screen and (max-width: 600px) {
+      padding: 10px 0;
+    }
     ul{
       display: flex;
-      margin-top: 10px;
+      margin-top: 20px;
       list-style: none;
      li{
       margin: 0 20px;
+      @media screen and (max-width: 600px) {
+        margin: 20px 0;
+      }
      } 
      a{
-      color: $mainGreen;
+      color: $white;
       font-weight: bold;
       transition: all 0.4s ease-in;
       &:hover{
@@ -46,17 +52,12 @@ $white: #ffffff;
   
 
 @media screen and (max-width: 600px){
-  .navSearch{
-    margin-top: 12px;
-    width: 90%;
-  }
   #nav-menu{
     transform: translateX(-100%);
     height: 100vh;
     padding-top: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     transition: all 0.5s linear;
   }
