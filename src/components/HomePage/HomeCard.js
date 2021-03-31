@@ -9,8 +9,8 @@ const HomeCard = () => {
 
     return(
 <div className = "home-card">
-    <div className="wrapper">
-        <Link to="/Wears" className="links" >
+    <div className="card-wrapper">
+    <Link to="/Wears" className="links" >
     <div className= "collection-card">
        <div className="card-header">
            <img src={clothes} alt='clothes' />

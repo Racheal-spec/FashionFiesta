@@ -26,6 +26,11 @@ $white: #ffffff;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-column-gap: 30px;
-        grid-row-gap: 50px
+        grid-row-gap: 50px;
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+        }
     }
 }
