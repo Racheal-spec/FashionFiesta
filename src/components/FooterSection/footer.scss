@@ -11,7 +11,7 @@ footer{
     width: 100%;
     position: relative;
     .footer-wrapper{
-        padding: 0 50px;
+        padding: 0px 50px;
     }
     ul{
         list-style: none;
@@ -74,9 +74,9 @@ footer{
 
 @media screen and (max-width: 600px){
     footer{
-        padding: 100px 0;
+        padding: 70px 0;
          .first-footer{
-             margin-top: 80px;
+            margin-top: 80px;
          }
         .footer-form{
             width: 80%;

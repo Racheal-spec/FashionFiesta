@@ -95,11 +95,9 @@ const Header = () => {
   </li>
 </Link> 
 <Link to='/Login' className='nav-links' onClick={closeMenu}>
-        <li>
-         Login
-        </li>
-        </Link>  
-   <Link to='/Cart' className="nav-links">
+        <li>Login</li>
+  </Link>  
+   <Link to='/Cart' className="nav-links" onClick={closeMenu}>
    <li><i className='fas fa-shopping-cart'></i>
     <span className="cart-number">{carts?.length}</span>
    </li>

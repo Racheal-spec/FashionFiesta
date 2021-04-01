@@ -6,6 +6,30 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .hero-section{
+    position: relative;
+ .hero-slider{
+     .carousel{
+         .carousel-indicators{
+             display: none;
+         }
+         .carousel-inner{
+             .carousel-caption{
+                 padding-bottom: 15%;
+                 width: 100%;
+                 @media screen and (max-width: 600px) {
+                     left: 5%;
+                 }
+             }
+         }
+     }
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+ }   
+
    .hero-wrapper{
     display: flex;
     align-items: center;
@@ -14,16 +38,34 @@ $white: #ffffff;
     .hero-text{
         text-align: left;
         margin: 10px 0;
+        .hero-button{
+            border: none;
+            background-color:$secondaryGreen;
+            color: $white;
+            font-weight: bold;
+            padding: 6px 14px;
+            transition: all 0.5s ease-in;
+        &:hover{
+            text-decoration: none;
+            background-color: $mainGreen ;
+        }
+    }
+        h2{
+            font-size: 2rem;
+            padding: 0 5px;
+       @media screen and (max-width: 600px) {
+           font-size: 1.6rem;
+       }
+        }
     }
     .home-bg{
        background-color: $mainGreen;
        display: flex;
        align-items: center;
        width: 100%;
-       height: 90vh;
        padding: 30px 60px;
        @media screen and (max-width: 600px) {
-        padding: 0;
+        padding: 40px 0;
        }
        p, h2{
            color: white;
@@ -88,7 +130,9 @@ $white: #ffffff;
         position: absolute;
         z-index: 2;
         right: 10px;
-        
+    @media screen and (max-width: 960px) {
+        right: 12px;
+    }
     }
   .card-wrapper{
     display: grid;
@@ -187,14 +231,8 @@ $white: #ffffff;
 
 @media screen and (max-width: 600px){
     .hero-text{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         p, h2{
-            width: 100%;
-            text-align: center;
+        width: 100%;
         }   
     }
 }

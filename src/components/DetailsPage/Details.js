@@ -23,10 +23,10 @@ const SingleDetail = ({id, title, image, price, rating, info}) => {
 
     return (
         <div>
-            <div className="container my-5 details">
+            <div className="container mb-5 details">
              <div className="row">
             <div className="col-lg-6 col-md-6 col-12">  
-            <img src={image} alt="" />
+            <img src={image} alt={title} />
             </div>
             <div className="col-lg-6 col-md-6 col-12 second-column">
             <h5><strong>Title: </strong>{title}</h5>
