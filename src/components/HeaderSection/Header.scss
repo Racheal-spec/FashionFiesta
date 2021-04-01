@@ -71,12 +71,13 @@ $white: #ffffff;
                
               }
                 img{
-                  width: 70%;
+                  width:70%;
                   height: 70%;
                   object-fit: cover;
-                  @media screen and (max-width: 960) {
-                    width: 30%;
-                    height: 30%;
+                  @media screen and (max-width: 600px) {
+                    width: 40%;
+                    height: 40%;
+                    padding: 0;
                     object-fit: cover;
                  }
                 }

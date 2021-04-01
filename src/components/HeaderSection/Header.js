@@ -25,6 +25,7 @@ const Header = () => {
    }, [])// eslint-disable-line react-hooks/exhaustive-deps
    
    return(
+   <>
 <nav className='navs'>
  <div className = 'wrapper'>
 <div className="logo-div">
@@ -92,7 +93,12 @@ const Header = () => {
       </div>
     </div>
   </li>
-</Link>   
+</Link> 
+<Link to='/Login' className='nav-links' onClick={closeMenu}>
+        <li>
+         Login
+        </li>
+        </Link>  
    <Link to='/Cart' className="nav-links">
    <li><i className='fas fa-shopping-cart'></i>
     <span className="cart-number">{carts?.length}</span>
@@ -112,6 +118,7 @@ const Header = () => {
  </div>  
 </div>
    </nav>
+   </>
     )
 }
 

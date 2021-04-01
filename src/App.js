@@ -11,6 +11,8 @@ import Cart from './components/CartPage/Cart';
 import Footer from './components/FooterSection/Footer';
 import Details from './components/DetailsPage/Details';
 import BackToTop from './components/BackToTop';
+import Banner from './components/Banner/Banner';
+import Login from './components/Login/Login';
 
 
 const App = () => {
@@ -20,16 +22,17 @@ const App = () => {
 
     <Router>
    <div className ='App'>
+     <Banner />
      <Header />
      <Switch>
   <Route path= '/' exact component = {Home} />
   <Route path= '/Wears' component = {Wears} />
   <Route path= '/Watches' component = {Watches} />
   <Route path= '/Bags' component = {Bags} />
+  <Route path='/Login' component= {Login} />
   <Route path= '/Cart' component = {Cart} />
   <Route path= '/Details' exact component = {Details} />
   <Route path= '/Details/:id' component = {Details} />
-
   </Switch>
   <BackToTop />
     <Footer />

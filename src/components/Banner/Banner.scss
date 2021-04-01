@@ -1,0 +1,40 @@
+.banner{
+ 
+    .banner-note{
+        background-color: #d69fd8;
+        width: 100%;
+        height: 30px;
+        top: 0;
+      @media screen and (max-width:600px){
+          height: 30px;
+      }
+        h1{
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 0.8rem;
+            padding: 5px 0;
+            @media screen and (max-width:600px){
+                font-size: 0.6rem;
+            }
+        }
+    }
+    .cancel{
+        display: none;
+    }
+    .cancel-btn{
+        position: absolute;
+        top: -2px;
+        right: 20px;
+        z-index: 2;
+        cursor: pointer;
+        @media screen and (max-width:600px){
+           top: -20px;
+           right: 10px;
+            }
+        h4{
+            color: white;
+           
+           }
+    }  
+}
