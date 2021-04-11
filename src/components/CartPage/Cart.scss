@@ -1,19 +1,32 @@
+$mainGreen: #3BB7D3;
+$mainPink: #d69fd8;
+$secondaryGreen: #2b95a1;
+$lightGreen: #2b95a18a;
+$secondaryBlue: #8DCAFF;
+$white: #ffffff;
+$grey1: #959595;
+$grey2: #ccc;
+$primaryColor: #f1f1f1;
+$black: #212529;
+
 .cart-product{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 80px 30px;
+    margin: 0px 30px;
     background-color: rgba(128, 128, 128, 0.089);
+    width: 70%;
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
 }
 .cart-info{
-    margin: 40px 20px;  
+    margin: 15px 20px;  
+    text-align: left; 
     @media screen and (max-width: 600px) {
         margin: 10px 20px;
     }
- text-align: left; 
+
     .button-div button{
         border: none;
         background-color: #d69fd8;
@@ -39,16 +52,64 @@
 } 
 } 
 
-.checkout img{
-        max-width: 30%;
-        padding-bottom: 30px;
+.checkout{
+    position: relative;
+    .cart-div{
+        padding: 10px 0;
+    }
+.subtotal{
+    background-color: $grey2;
+    color: $black;
+    width: 22%;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    p{
+        font-weight: 500;
+    }
+    .checkout-btn{
+        border: none;
+        margin: 8px 10px;
+        background-color:$secondaryGreen;
+        color: $white;
+        font-weight: bold;
+        padding: 6px 14px;
+        transition: all 0.5s ease-in;
+    &:hover{
+        text-decoration: none;
+        background-color: $mainGreen ;
+    }
+    }
+    .shopmore-btn{
+        border: 1px solid $secondaryGreen;
+        margin: 8px 10px;
+        background-color:transparent;
+        color: $white;
+        font-weight: bold;
+        padding: 6px 14px;
+        transition: all 0.5s ease-in;
+    &:hover{
+        text-decoration: none;
+        border: 3px solid $secondaryGreen;
+    }
+    }
+}
+    img{
+    max-width: 30%;
+    padding-bottom: 30px;
 @media screen and (max-width:600px) {
     padding-bottom: 100px;
     max-width: 50%;
 }        
+}  
+
+h2{
+    padding: 40px 80px;
+    color: #3BB7D3;
+    color: rgba(225, 225, 248, 0.993);
+    text-align: left;
+     } 
 }
-    .checkout h2{
-        padding: 40px 0;
-        color: #3BB7D3;
-        color: rgba(225, 225, 248, 0.993);
-         } 
+

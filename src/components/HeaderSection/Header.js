@@ -6,12 +6,12 @@ import navbags from '../Img/bags.jpg';
 import navwatches from '../Img/watches.jpg';
 import './Header.scss';
 import { useStateValue } from '../Context/StateProvider';
+import { auth } from '../Firebase';
 
 
 const Header = () => {
-    const[{carts }] = useStateValue();
+    const[{carts, user }] = useStateValue();
     console.log(carts); 
-
     const[click, setClick] = useState(false);
 
     const closeMenu = () => {
@@ -20,12 +20,20 @@ const Header = () => {
     const handleClick = () => {
       setClick(!click);
      }
+
+    const handleAuth = () => {
+      if(user){
+        auth.signOut();
+      }
+      setClick(!click);
+    }
+
    useEffect(() =>{
      handleClick();
    }, [])// eslint-disable-line react-hooks/exhaustive-deps
    
    return(
-   <>
+   <div>
 <nav className='navs'>
  <div className = 'wrapper'>
 <div className="logo-div">
@@ -33,18 +41,20 @@ const Header = () => {
 <img src= {homelogo} className='logo-img' alt='logo'/>
 </Link>
 </div>
+{user? (<h6 className="name-h6">Hello, {user?.email}</h6>) : ('')}
 <ul className={click ? "nav-ul" : "nav-ul active"}>
+{user? (<h6>Hello, {user?.email}</h6>) : ('')}
         <Link to='/' className='nav-links' onClick={closeMenu}>
-        <li>Home</li>
+        <li>HOME</li>
         </Link>
       
-  <Link to='/' className="nav-links">
-          <li>Products
+  <Link to='' className="nav-links">
+          <li>PRODUCTS
     <div className="mega-menu">
         <div className="content">
       <div className="row">
             <div className="text">
-            <h5>Wears</h5>
+            <h5>WEARS</h5>
          <p>For a limited time, save on some of our best-selling
             oils. Our culinary pioneers have collected
              a wide spectrum of flavors.
@@ -60,7 +70,7 @@ const Header = () => {
           </div>
      <div className="row">
           <div className="text">
-            <h5>Watches</h5>
+            <h5>WATCHES</h5>
          <p>For a limited time, save on some of our best-selling
             oils. Our culinary pioneers have collected
              a wide spectrum of flavors.
@@ -76,7 +86,7 @@ const Header = () => {
           </div>
      <div className="row">
           <div className="text">
-            <h5>Bags</h5>
+            <h5>BAGS</h5>
          <p>For a limited time, save on some of our best-selling
             oils. Our culinary pioneers have collected
              a wide spectrum of flavors.
@@ -94,9 +104,16 @@ const Header = () => {
     </div>
   </li>
 </Link> 
-<Link to='/Login' className='nav-links' onClick={closeMenu}>
-        <li>Login</li>
+<Link to={!user && '/Login'} className='nav-links' onClick={handleAuth}>
+        <li>
+          {user ? 'LOGOUT' : 'LOGIN'}
+          </li>
   </Link>  
+  <Link to='/register' className='nav-links' onClick={closeMenu}>
+        <li>
+        REGISTER
+        </li>
+        </Link>
    <Link to='/Cart' className="nav-links" onClick={closeMenu}>
    <li><i className='fas fa-shopping-cart'></i>
     <span className="cart-number">{carts?.length}</span>
@@ -105,6 +122,7 @@ const Header = () => {
 </ul>
 
 {/*wrapper div */}
+
    <Link to='/Cart' className="nav-icon">
    <i className='fas fa-shopping-cart'>
     <span className="cart-number">{carts?.length}</span>
@@ -116,7 +134,7 @@ const Header = () => {
  </div>  
 </div>
    </nav>
-   </>
+   </div>
     )
 }
 

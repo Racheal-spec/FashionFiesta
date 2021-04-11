@@ -1,0 +1,88 @@
+$mainGreen: #3BB7D3;
+$mainPink: #d69fd8;
+$secondaryGreen: #2B95A1;
+$secondaryBlue: #8DCAFF;
+$white: #ffffff;
+
+.login{
+    height: 100vh;
+ 
+    background: linear-gradient(to right, $mainGreen, $mainPink);
+    .login-page{
+       padding: 20px 0;
+        img{
+            max-width: 50%;
+            margin: 20px auto;
+        }
+       h4{
+           color: $white;
+           padding: 10px 0;
+       }
+       p{
+           margin: 0;
+           font-weight: bold;
+       }
+        .login-card{
+            display: flex;
+            flex-direction: column;
+            background: $white;
+            width: 26%;
+            max-height: 480px;
+            margin: 0px auto;
+            border-radius: 8px;
+            padding: 20px 0;
+            .login-input{
+                width: 90%;
+                margin: 0 auto;
+                padding: 5px;
+                border: 1px solid $secondaryGreen;
+            }
+            .forgot-password{
+                color: grey;
+                font-size: 0.8rem;
+                text-decoration: underline;
+                margin: 7px 20px;
+                margin-top: 16px;
+                text-align: right;
+            }
+            label{
+                text-align: left;
+                padding: 10px 20px;
+                font-weight: bold;
+            }
+            .login-btn{
+                border: none;
+                background-color: $secondaryGreen;
+                color: $white;
+                font-weight: bold;
+                width: 88%;
+                margin: 15px 20px;
+                padding: 6px 14px;
+                transition: all 0.4s ease-in;
+                cursor: pointer;
+            &:hover{
+                text-decoration: none;
+                background-color: $mainGreen;
+            }
+           
+            }
+            .create-btn{
+                background: transparent;
+                border: none;
+                color: $secondaryGreen;
+                font-weight: 500;
+                border: 2px solid $secondaryGreen;
+                width: 88%;
+                margin: 15px 20px;
+                padding: 6px 14px;
+                transition: all 0.4s ease-in;
+                cursor: pointer;
+            &:hover{
+                text-decoration: none;
+                background-color: $mainGreen;
+                color: $white;
+            }
+            } 
+        }
+    }
+}

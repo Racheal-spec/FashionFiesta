@@ -6,6 +6,7 @@ import HomeFixed from './HomeFixed';
 import HomeProduct2 from './HomeProduct2';
 import HomeMagic from './HomeMagic';
 import HomeCard from './HomeCard';
+import Newsletter from './Newsletter';
 
 
 const Home = () => {
@@ -13,11 +14,13 @@ const Home = () => {
     return(
     <div className="home-page">
    <HomeHero  />
-   <HomeMagic />
-   <HomeCard />
+   
    <HomeProduct/>
+   <HomeCard />
+   <HomeMagic />
    <HomeFixed />
    <HomeProduct2 />
+   <Newsletter />
         </div> 
 
     )

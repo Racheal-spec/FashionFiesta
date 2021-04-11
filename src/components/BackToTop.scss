@@ -6,7 +6,6 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .scrolltop{
-    background-color:$mainPink;
     width: 5%;
     border-radius: 5px;
     padding: 5px 0;
@@ -35,7 +34,7 @@ $white: #ffffff;
         background-color: $secondaryGreen;
     }
     .fa-arrow-up{
-        color: $white;
+        color: $mainPink;
         font-size: 1.5rem;
     }
 }

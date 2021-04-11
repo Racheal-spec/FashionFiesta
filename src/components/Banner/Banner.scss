@@ -1,7 +1,14 @@
+$white: #ffffff;
+$grey1: #959595;
+$grey2: #ccc;
+$primaryColor: #f1f1f1;
+$black: #212529;
+$black2: #252525;
+
 .banner{
  
     .banner-note{
-        background-color: #d69fd8;
+        background-color: $black;
         width: 100%;
         height: 30px;
         top: 0;
@@ -24,10 +31,11 @@
     }
     .cancel-btn{
         position: absolute;
-        top: -2px;
+        top: 2px;
         right: 20px;
         z-index: 2;
         cursor: pointer;
+        color: white;
         @media screen and (max-width:600px){
            top: -20px;
            right: 10px;

@@ -1,23 +1,53 @@
 import React from 'react';
 import './Cart.scss';
+import {useHistory} from 'react-router-dom';
 import { useStateValue } from '../Context/StateProvider';
 import CartProduct from './CartProduct';
 import cart from '../Img/empty-cart.svg';
+import CurrencyFormat from 'react-currency-format';
+import {getTotal} from '../Context/Reducer';
 
 const Cart = () => {
-const[{ carts }] = useStateValue();
-   
+const[{carts}] = useStateValue();
+
+let history = useHistory();
+const shopHandler = () => {
+   history.push('/');
+}
+
+const checkoutHandler = () => {
+    history.push('/checkout');
+}
    return(
 <div className="checkout">
+<div className="subtotal">
+    <CurrencyFormat
+    renderText={(value) => (
+        <>
+          <p>Your cart contains <span>({carts.length}) items</span></p>
+          <p>Your subtotal is <strong>{value}</strong></p>
+         
+        </>
+    )}
+        decimalScale={2}
+        value={getTotal(carts)}
+        displayType={'text'}
+        thousandSeparator={true}
+        prefix={"$"}
+    />
+      <button className="checkout-btn" onClick={checkoutHandler}>Proceed to Checkout</button>
+      <button className="shopmore-btn" onClick={shopHandler}>Continue Shopping</button>     
+          
+        </div> 
 {carts?.length === 0 ? (
 <div>
     <h2>Your Shopping Cart is Empty</h2>
     <img src={cart} alt="shopping cart" />
 </div>
 ) : (
+   
     <div>
         <h2>Your Shopping Cart</h2>
-    
         {carts.map((item) => (
             <div className="cart-div" key={item.id}>
           <CartProduct 

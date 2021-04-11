@@ -70,15 +70,6 @@ const handleWatches = () =>  {
         </Carousel>
 
   </div>
-    {/*
-   <div className="hero-wrapper">
-       <div className="row home-bg">
-       <div className='col-sm-12 col-md-6 col-lg-6'>
-    <img src={womanShopping} className="home-img-bg" alt="white-girl" />
-    </div>
-       </div>
-   </div>
-    */}
 </section>
 </div>
     )

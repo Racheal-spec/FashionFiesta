@@ -3,7 +3,12 @@ $mainPink: #d69fd8;
 $secondaryGreen: #2b95a1;
 $lightGreen: #2b95a18a;
 $secondaryBlue: #8DCAFF;
+
 $white: #ffffff;
+$grey1: #959595;
+$grey2: #ccc;
+$primaryColor: #f1f1f1;
+$black: #212529;
 
 .hero-section{
     position: relative;
@@ -122,6 +127,7 @@ $white: #ffffff;
 
 .home-card{
     position: relative;
+    padding: 60px 0;
     span{
         font-size: 0.8rem;
         background-color: $secondaryGreen;
@@ -202,7 +208,7 @@ $white: #ffffff;
     .img-bg{
         height: 400px;
         width: 800px;
-        background-image: linear-gradient(to bottom,  #d69fd8e8, #3bb7d3c4),url(../Img/Atm-card.jpg);
+        background-image: linear-gradient(to bottom,#212529a6, rgba(204, 204, 204, 0.548)),url(../Img/Atm-card.jpg);
         background-position: top left;
         background-repeat: no-repeat; 
         background-size: cover;
@@ -212,10 +218,52 @@ $white: #ffffff;
 }
 }
  
+//Newsletter section
+
+.newsletter{
+    background: $black;
+    color: white;
+    padding: 40px 0; 
+    margin: 50px;
+    .news-div{ 
+   
+    .news-input{
+        width: 30%;
+        padding: 10px 5px;
+        margin: 25px 0;
+        border: none;
+    }
+    h4{
+        margin: 5px 0;
+    }
+    .fa-envelope-open-text{
+        font-size: 4rem;
+        margin: 10px 0;
+        background-color: $secondaryGreen;
+    }
+    button{
+        border: none;
+        background-color: $secondaryGreen;
+        color: $white;
+        font-weight: bold;
+        padding: 10px 14px;
+        transition: all 0.5s ease-in;
+    &:hover{
+        text-decoration: none;
+        background-color: $mainGreen;
+    }
+    }
+    }
+}
+
+
+
+
 
 
 .product-section{
     padding: 30px 0;
+    background: $primaryColor;
     .product-cards{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

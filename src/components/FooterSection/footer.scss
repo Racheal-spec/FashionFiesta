@@ -4,8 +4,16 @@ $secondaryGreen: #2B95A1;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
+$white: #ffffff;
+$grey1: #959595;
+$grey2: #ccc;
+$primaryColor: #f1f1f1;
+$black: #212529;
+$black2: #252525;
+
+
 footer{
-    background-color: $mainGreen;
+    background-color: $primaryColor;
     height: 100%;
     padding: 50px 0;
     width: 100%;
@@ -17,29 +25,32 @@ footer{
         list-style: none;
         li{
             line-height: 35px;
+            text-align: left;
         }
         a{
-            color: white;
+            color: $black2;
             font-weight: bold;
             transition: all 0.4s ease-in;
             &:hover{
                 text-decoration: none;
-                color: $mainPink;
+                color: $black;
             }
         }
     }
     .copyright-div{
-        background-color: $mainPink;
+        background-color: $black;
         width: 100%;
         position: absolute;
         bottom: 0;
         p{
           color: white;
-           font-weight: bold;
+           font-weight: 500;
+           font-size: 0.8rem;
+           margin-top: 10px;
         }
     }
     .footer-form{
-        background-color: $secondaryGreen;
+        background-color: $black;
         color: white;
         padding: 10px 10px;
         margin: 0 60px;
