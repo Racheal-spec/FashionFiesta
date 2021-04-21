@@ -57,6 +57,10 @@ footer{
         position: absolute;
         top: -10%;
         right: 0;
+        @media screen and (max-width: 600px) {
+        position: absolute;
+        top:0px;
+        }
         strong{
             font-size: 1.4rem;
         }

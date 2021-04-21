@@ -3,11 +3,19 @@ $mainPink: #d69fd8;
 $secondaryGreen: #2B95A1;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
+$grey2: #ccc;
+$primaryColor: #f1f1f1;
+$black: #212529;
+$black2: #252525;
+$grey1: #959595;
 
 .login{
     height: 100vh;
- 
-    background: linear-gradient(to right, $mainGreen, $mainPink);
+    background: linear-gradient(to right,$primaryColor, $grey1 );
+    @media screen and (max-width: 600px) {
+      height: 100%;  
+      margin: 50px 0;
+    }
     .login-page{
        padding: 20px 0;
         img{
@@ -31,6 +39,9 @@ $white: #ffffff;
             margin: 0px auto;
             border-radius: 8px;
             padding: 20px 0;
+            @media screen and (max-width: 600px) {
+                width: 80%;
+            }
             .login-input{
                 width: 90%;
                 margin: 0 auto;

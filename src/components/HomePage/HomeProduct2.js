@@ -8,10 +8,9 @@ const HomeProduct2 = () => {
 
     return(
         <div>
-        <section>
-        <div className="product-section">
+        <section className="product-section">
         <Title name= 'Customer' title='Favourites' />
-        <div className="container product-cards my-5">   
+        <div className="container product-cards">   
         {homes2.map((item) => ( 
                 <div className="home-card" key= {item.id}>
                      <Product
@@ -25,7 +24,6 @@ const HomeProduct2 = () => {
     </div>
                 
         ))}
-        </div>
         </div>
         </section>
       </div>   

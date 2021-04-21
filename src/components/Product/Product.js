@@ -1,9 +1,10 @@
 import React from 'react';
 import './product.scss';
 import {Link} from 'react-router-dom';
-//import ATM from '../Img/Atm-card.jpg';
 import { useStateValue } from '../Context/StateProvider';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import placeholder from '../Img/placeholder.png';
  
 const Product = ({id, title, image, rating, price}) => {
   const[, dispatch] = useStateValue();
@@ -22,17 +23,19 @@ const Product = ({id, title, image, rating, price}) => {
    
 } 
 
-/*
-const addDefault = (e) => {
-   e.target.src = {ATM};
+if(!image) {
+  return <h1>Loading...</h1>
 }
-*/
+
 return(
-  <React.Fragment>
+  <>
 <div className="card mx-2">
     <Link to={`Details/${id}`} className="product-link">
-    <img src={image} alt="product" className="product-img"/>
-  
+   <LazyLoadImage 
+   src={image} 
+   alt="product" 
+   className="product-img"
+   />
   <p className="product-title font-weight-bold">{title}</p>
   </Link>
 
@@ -45,11 +48,12 @@ return(
  </div>
 
  <div className="product-price">
-  <p className="font-weight-bold"><small>$</small>{price}</p>
+  <p className="font-weight-bold"><small>NGN</small>{price}</p>
   </div>
   <button onClick={addToCart}>Add to Cart</button>
 </div>
-</React.Fragment>
+</>
+
 )
  }
 

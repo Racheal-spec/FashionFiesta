@@ -9,9 +9,8 @@ const HomeMagic = () => {
 
     return(
         <div>
-        <section>
-        <div className="product-section">
-        <div className="product-slide">
+        <section className="product-section">
+      <div className="product-slide">
         <div className="product-magic">
         <Title name= 'Customer' title='Favourites' />
         <p>Shop pure ingredients—the highest quality we could find on Earth,
@@ -35,7 +34,6 @@ const HomeMagic = () => {
         ))}
         </div>
             </div>    
-        </div>
         </section>
       </div>   
     )

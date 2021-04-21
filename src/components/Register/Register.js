@@ -16,7 +16,6 @@ const registerHandler = (e) => {
     
     auth.createUserWithEmailAndPassword(email, password)
     .then((auth) => {
-        console.log(auth);
         if(auth) {
            history.push('/');
         }
@@ -24,9 +23,8 @@ const registerHandler = (e) => {
     .catch(error => alert(error.message))
 }
 
-console.log('display name is ', displayName);
     return(
-        <section className="login">
+ <section className="login">
     <div className="login-page">
     <h4>Create a New Account</h4>
     <div className= "login-card">

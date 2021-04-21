@@ -14,7 +14,6 @@ const Home = () => {
     return(
     <div className="home-page">
    <HomeHero  />
-   
    <HomeProduct/>
    <HomeCard />
    <HomeMagic />

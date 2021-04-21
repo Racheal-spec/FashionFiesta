@@ -5,8 +5,7 @@ import {Link} from 'react-router-dom';
 
 
 const CartProduct = ({id, title, image, price, rating}) => {
- const [carts, dispatch] = useStateValue();
-  console.log(carts);
+ const [, dispatch] = useStateValue();
 
 const removeFromCart = () => {
 dispatch({
@@ -18,7 +17,7 @@ dispatch({
   return(
 <div className="cart-product">
    <div className="cart-img">
-   <img src={image} alt="" />
+   <img src={image} alt="product-img" />
    </div>
 
 <div className="cart-info">

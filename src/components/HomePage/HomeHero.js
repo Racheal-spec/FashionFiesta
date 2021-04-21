@@ -14,14 +14,15 @@ let history = useHistory();
     const handleSelect = (selectedIndex, e) => {
         setCurrent(selectedIndex);
     }
-
 const handleWears = () =>  {
   history.push("/wears");
 }
 const handleWatches = () =>  {
     history.push("/watches");
   }
-
+  const handleBags = () =>  {
+    history.push("/bags");
+  }
     return(
 <div>
 <section className="hero-section">
@@ -33,7 +34,7 @@ const handleWatches = () =>  {
             <Carousel.Caption>
             <div className='col-sm-12 col-md-6 col-lg-6 hero-text'>
         <h2>Your One Stop Shop!</h2>
-        <p>Sed voluptatem accusantium ncncd vbbxx uturr sjdcdd vounnt gigoood cobbn teegh eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
+        <p>Sed voluptatem accusantium ncncd gigoood cobbn teegh eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
         Sed voluptatem accusantium doloremque eaque ipsa
         </p>
         <button type='button' className="hero-button" onClick={handleWears}>Shop Now</button>
@@ -47,9 +48,11 @@ const handleWatches = () =>  {
             <div className="hero-text">
             <div className='col-sm-12 col-md-6 col-lg-6 hero-text'>
         <h2>Get 20% off with your Visa Card</h2>
-        <p>Sed voluptatem accusantium ncncd vbbxx uturr sjdcdd vounnt gigoood cobbn teegh eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
-        Sed voluptatem accusantium doloremque eaque ipsa
+        <p>Sed voluptatem accusantium ncncd vbbxx uturr sjdcdd
+           vounnt gigoood cobbn teegh eaque ipsa Sed voluptatem accusantium 
+           doloremque eaque ipsa
         </p>
+        <button type='button' className="hero-button" onClick={handleWatches}>Shop Now</button>
           </div>
             </div>
             </Carousel.Caption>
@@ -60,10 +63,10 @@ const handleWatches = () =>  {
             <Carousel.Caption>
             <div className='col-sm-12 col-md-6 col-lg-6 hero-text'>
         <h2>Your One Stop Shop!</h2>
-        <p>Sed voluptatem accusantium ncncd vbbxx uturr sjdcdd vounnt gigoood cobbn teegh eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
+        <p>Sed voluptat vounnt gigoood cobbn teegh eaque ipsa Sed voluptatem accusantium doloremque eaque ipsa
         Sed voluptatem accusantium doloremque eaque ipsa
         </p>
-        <button type='button' className="hero-button" onClick={handleWatches}>Shop Now</button>
+        <button type='button' className="hero-button" onClick={handleBags}>Shop Now</button>
           </div>
             </Carousel.Caption>
             </Carousel.Item>
