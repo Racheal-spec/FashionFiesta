@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 const CartProduct = ({id, title, image, price, rating}) => {
  const [, dispatch] = useStateValue();
-
+ 
 const removeFromCart = () => {
 dispatch({
     type: "REMOVE_FROM_CART",

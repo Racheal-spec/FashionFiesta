@@ -3,6 +3,9 @@ $mainPink: #d69fd8;
 $secondaryGreen: #2B95A1;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
+$grey1: #959595;
+$grey2: #ccc;
+$primaryColor: #f1f1f1;
 
 
 .card{
@@ -50,13 +53,30 @@ $white: #ffffff;
         padding: 6px 14px;
         box-shadow: 0px 2px 0px 2px $secondaryGreen;
         transition: all 0.4s ease-in;
-    &:hover{
-        text-decoration: none;
-        background-color: $secondaryGreen;
-    } 
+        &:hover{
+            text-decoration: none;
+            background-color: $secondaryGreen;
+        } 
+        &:disabled{
+            background-color: $grey2;
+            color: $primaryColor;
+        }
+   
     @media screen and (max-width: 600px) {
        width: 80%; 
        padding: 4px 10px;
         }   
     }
+   
+}
+.added{
+    background-color: $mainPink;
+    position: absolute;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 1px 0 0 1px $mainPink;
+    padding: 5px
+}
+.cancel{
+    display: none;
 }

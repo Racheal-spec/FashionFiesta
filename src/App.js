@@ -6,7 +6,6 @@ import Header from './components/HeaderSection/Header';
 import {auth} from './components/Firebase';
 import { useStateValue } from './components/Context/StateProvider';
 import BackToTop from './components/BackToTop';
-import Banner from './components/Banner/Banner';
 import Footer from './components/FooterSection/Footer';
 import placeholder from './components/Img/placeholder.png';
 const Home = React.lazy(()=> import('./components/HomePage/Home'))
@@ -50,7 +49,6 @@ auth.onAuthStateChanged(authUser => {
 
     <Router>
    <div className ='App'>
-     <Banner />
      <Header />
      <Switch>
   <React.Suspense fallback={<img src={placeholder} alt="loading"/>}>

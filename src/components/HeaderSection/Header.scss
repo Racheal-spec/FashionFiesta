@@ -13,12 +13,14 @@ $black2: #252525;
 
 
   .navs{
-    position: sticky;
-    top:0;
+    position: relative;
+    position: fixed;
+    top: 0;
     width: 100%;
     background: $white;
     z-index: 99;
     height: 10vh;
+    box-shadow: 1px 0px 0.02px $black2, 0px 1px 1px $black2 ;
     .wrapper{
       position: relative;
       max-width: 100%;

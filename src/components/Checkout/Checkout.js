@@ -10,6 +10,7 @@ import {auth} from '../Firebase';
 
 const Checkout = () => {
 const[{carts, user}] = useStateValue();
+
 const[email, setEmail] = useState(window.localStorage.getItem('emailForSignIn') || '');
 const[emailsent, setEmailSent] = useState(false);
 
@@ -20,6 +21,7 @@ const config = {
   publicKey: "pk_test_5a085cab5af1332dc3d285a203b1746417b1b88f"
 }
 
+//Message on unsuccessful transaction
 const onSuccess = () => {
    alert('Transaction successful----Thank you for purchasing fashionfiesta item');
 } 
@@ -52,6 +54,9 @@ var actionCodeSettings = {
 
  useEffect(()=> {
   setEmail("");
+  //save item in local storage
+  localStorage.setItem('saveData', JSON.stringify(carts));
+
   if(auth.isSignInWithEmailLink(window.location.href)){
     let email = window.localStorage.getItem('emailForSignIn');
  if(!email) {
@@ -60,13 +65,15 @@ var actionCodeSettings = {
 auth.signInWithEmailLink(email, window.location.href)
 .then(()=> {
   window.localStorage.removeItem('emailForSignIn');
+  const localData = localStorage.getItem(carts);
+  return localData ? JSON.parse(localData) : [];
 })
 .catch((error) => {
   console.log(error)
   }); 
   }
 
-}, [])
+}, [carts])
 
 
     return(

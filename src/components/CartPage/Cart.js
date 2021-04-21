@@ -22,7 +22,7 @@ const checkoutHandler = () => {
 <div className="checkout">
  <div className="cart-top">
 <div className='cart-h2'>
-    {carts === 0 ? (
+    {carts.length === 0 ? (
         <h2>Your Shopping Cart is Empty</h2>
     ) : (
         <h2>Your Shopping Cart</h2>
@@ -46,8 +46,9 @@ const checkoutHandler = () => {
       <button className="checkout-btn" onClick={checkoutHandler}>Proceed to Checkout</button>
       <button className="shopmore-btn" onClick={shopHandler}>Continue Shopping</button>     
           
-        </div>
-        </div>         
+    </div>
+    </div>  
+           
 <div className="cart-items">    
 {carts?.length === 0 ? (
 <div>
