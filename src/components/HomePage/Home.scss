@@ -70,7 +70,7 @@ $black: #212529;
        display: flex;
        align-items: center;
        width: 100%;
-       padding: 30px 60px;
+      padding: 30px 60px;
        @media screen and (max-width: 600px) {
         padding: 40px 0;
        }
@@ -179,14 +179,9 @@ $black: #212529;
   }
     
 }
-
-
-
 /*fixed background section*/
 
 .fixed-section{
-    width: 100%;
-  /*    padding: 80px 0;*/
     @media screen and (max-width:600px) {
         padding: 40px 0;
     }
