@@ -1,6 +1,7 @@
 import React from 'react';
+import './Home.scss';
 
-const HomeFixed = () => {
+const HomeOverlay = () => {
 
 return(
 <div>
@@ -21,4 +22,4 @@ return(
 )
 }
 
-export default HomeFixed;
+export default HomeOverlay;

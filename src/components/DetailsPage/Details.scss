@@ -13,9 +13,13 @@ $white: #ffffff;
         color: $white;
         font-weight: bold;
         width: 30%;
-        padding: 6px 10px;
+        padding: 4px 5px;
         box-shadow: 0px 2px 0px 2px $secondaryGreen;
         transition: all 0.4s ease-in;
+        cursor: pointer;
+        @media screen and (max-width: 600px) {
+           width: 50%;
+        }
     &:hover{
         text-decoration: none;
         background-color: $secondaryGreen;

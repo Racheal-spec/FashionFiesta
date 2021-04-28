@@ -6,13 +6,13 @@ $white: #ffffff;
 
 .bags-herosection{
     .bags-bg{
-        height: 380px;
+        height: 480px;
         width: 800px;
-        background-image: linear-gradient(to bottom,  #d69fd8d2, #3bb7d334),url(../Img/bags.jpg);
+        background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)),url(../Img/bags.jpg);
         background-attachment: fixed;
         background-position: top;
         background-repeat: no-repeat; 
-        background-size: contain;
+        background-size: cover;
         @media screen and (max-width: 600px){
             background-size: cover;
         }

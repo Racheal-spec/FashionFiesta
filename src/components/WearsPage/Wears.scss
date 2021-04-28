@@ -5,18 +5,19 @@ $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
 .wears-herosection{
-   
+ .wears-wrapper{
     .wears-bg{
-        height: 380px;
-        width: 800px;
-        background-image: linear-gradient(to bottom,  #d69fd8d2, #3bb7d334),url(../Img/packed-clothes.jpg);
+        width: 100%;
+        height: 480px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)),url(../Img/wears.jpg);
         background-attachment: fixed;
         background-position: top;
         background-repeat: no-repeat; 
-        background-size: contain;
+        background-size: cover;
         @media screen and (max-width: 600px){
             background-size: cover;
         }
+}
 }
 }
 

@@ -3,7 +3,6 @@ $mainPink: #d69fd8;
 $secondaryGreen: #2B95A1;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
-
 $white: #ffffff;
 $grey1: #959595;
 $grey2: #ccc;
@@ -20,7 +19,10 @@ $black2: #252525;
     background: $white;
     z-index: 99;
     height: 10vh;
-    box-shadow: 1px 0px 0.02px $black2, 0px 1px 1px $black2 ;
+    box-shadow: 1px 0px 0.02px $grey2, 0px 1px 1px $primaryColor ;
+    @media screen and (min-width: 606px) and (max-width: 960px) {
+      height: 7vh;
+    }
     .wrapper{
       position: relative;
       max-width: 100%;
@@ -52,12 +54,13 @@ $black2: #252525;
           margin-right: 14px;
         }
         .nav-links{
-          color: $primaryColor;
+          color: $secondaryGreen;
           font-weight: 500;
           padding: 12px 10px;
           border-radius: 5px;
           font-size: 0.9rem;
           transition: all 0.3s ease-in;
+          cursor: pointer;
           .mega-menu{
             width: 100%;
             position: absolute;
@@ -79,7 +82,7 @@ $black2: #252525;
                padding: 0;
              }
              .row{
-              width: 100%;
+              width: 33.3%;
               padding: 0 20px;
               border-left: 1px solid rgba(255, 255, 255, 0.322);
              @media screen and (max-width: 960px){
@@ -93,7 +96,7 @@ $black2: #252525;
                   color: $secondaryGreen;
                 }
                  p{
-                   color: black;
+                  color: black;
                   font-weight: lighter;
                   @media screen and (max-width: 960px) {
                     font-size: 0.8rem;
@@ -121,7 +124,7 @@ $black2: #252525;
             }
           }
           &:hover{
-            background: $secondaryGreen;
+            background: $primaryColor;
             text-decoration: none;
           }
         }
@@ -181,9 +184,11 @@ $black2: #252525;
       left: -100%;
       opacity: 1;
       z-index: 2;
-    
       .nav-links{
         border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+        li{
+          color: $primaryColor;
+        }
         &:nth-child(3){
           border-bottom: none;
         }

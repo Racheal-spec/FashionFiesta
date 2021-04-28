@@ -2,11 +2,11 @@ import React from 'react';
 import './Home.scss';
 import HomeHero from './HomeHero';
 import HomeProduct from './HomeProduct';
-import HomeFixed from './HomeFixed';
+import HomeOverlay from './HomeOverlay';
 import HomeProduct2 from './HomeProduct2';
-import HomeMagic from './HomeMagic';
 import HomeCard from './HomeCard';
 import Newsletter from './Newsletter';
+import CustomerFav from './CustomerFav';
 
 
 const Home = () => {
@@ -16,8 +16,8 @@ const Home = () => {
    <HomeHero  />
    <HomeProduct/>
    <HomeCard />
-   <HomeMagic />
-   <HomeFixed />
+   <CustomerFav />
+   <HomeOverlay />
    <HomeProduct2 />
    <Newsletter />
         </div> 

@@ -9,41 +9,36 @@ $grey2: #ccc;
 $primaryColor: #f1f1f1;
 $black: #212529;
 
+
 .hero-section{
-    position: relative;
+  background-color: $black; 
+  padding-top: 55px;
  .hero-slider{
-     .carousel{
-         .carousel-indicators{
-             display: none;
-         }
-         .carousel-inner{
-             .carousel-caption{
-                padding-bottom: 12%;
-                 width: 100%;
-                 @media screen and (max-width: 600px) {
-                     left: 5%;
-                 }
-             }
-         }
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     @media screen and (max-width: 600px) {
+      flex-direction: column;   
      }
+   .hero-img{
+    flex: 0.6;
     img{
         width: 100%;
-        height: 500px;
         object-fit: cover;
         filter: brightness(40%);
     }
- }   
-
-   .hero-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
    }
     .hero-text{
         text-align: left;
-        margin: 10px 0;
-        @media screen and (max-width: 600px) {
-            margin-bottom: 80px;
+        margin: 20px 0;
+        color: white;
+        flex: 0.4;
+        h2{
+            font-size: 2.6rem;
+            padding: 0 5px;
+       @media screen and (max-width: 600px) {
+           font-size: 1.6rem;
+       }
         }
         .hero-button{
             border: none;
@@ -57,53 +52,15 @@ $black: #212529;
             background-color: $mainGreen ;
         }
     }
-        h2{
-            font-size: 2rem;
-            padding: 0 5px;
-       @media screen and (max-width: 600px) {
-           font-size: 1.6rem;
-       }
-        }
-    }
-    .home-bg{
-       background-color: $mainGreen;
-       display: flex;
-       align-items: center;
-       width: 100%;
-      padding: 30px 60px;
-       @media screen and (max-width: 600px) {
-        padding: 40px 0;
-       }
-       p, h2{
-           color: white;
-       }
-    }
-  .home-bg img{
-    height: 100%;
-    width: 100%;
-    filter: brightness(60%);
-    margin: 20px 0px;
-    }
-
-}
-.main-button{
-    border: none;
-    background-color: $mainPink;
-    color: $white;
-    font-weight: bold;
-    padding: 6px 14px;
-    box-shadow: 0px 2px 0px 2px $secondaryGreen;
-    transition: all 0.5s ease-in;
-&:hover{
-    text-decoration: none;
-    background-color: $secondaryGreen;
 }
 }
 
-/*product slide*/
+}
+
+/*customer's favourites*/
 .product-section{
     padding: 50px 0;
-    .product-slide{
+    .fav-product{
         display: grid;
         grid-template-columns: 1fr 2fr;
         @media screen and(max-width:960px){
@@ -193,6 +150,18 @@ $black: #212529;
         width: 60%;
         margin: 0 auto;
         margin-top: 10%;
+        .main-button{
+            border: none;
+            background-color: $secondaryGreen;
+            color: $white;
+            font-weight: bold;
+            padding: 6px 14px;
+            transition: all 0.5s ease-in;
+        &:hover{
+            text-decoration: none;
+            background-color: $secondaryBlue;
+        }
+        }    
         @media screen and (max-width:600px) {
             width: 98%;
             margin-top: 25%;
@@ -209,7 +178,7 @@ $black: #212529;
     .img-bg{
         height: 400px;
         width: 800px;
-        background-image: linear-gradient(to bottom,#212529a6, rgba(204, 204, 204, 0.548)),url(../Img/Atm-card.jpg);
+        background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)),url(../Img/Atm-card.jpg);
         background-position: top left;
         background-repeat: no-repeat; 
         background-size: cover;
@@ -222,7 +191,10 @@ $black: #212529;
 //Newsletter section
 
 .newsletter{
-    background: $black;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url('../Img/wears.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     padding: 40px 0; 
     margin: 80px;

@@ -13,11 +13,12 @@ export const initialState = {
     homes3: home3,
     watches: watches,
     bags: bags,
-    user: null   
+    user: null,
+    loading: true
 };
 
 export const getTotal = (carts) =>  
-    carts?.reduce((amount, item) => item.price + amount, 0);
+carts?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
 
@@ -29,6 +30,13 @@ const reducer = (state, action) => {
                 ...state,
                 carts: [...state.carts, action.item],
             };
+        
+        case 'LOAD_USERS':
+        
+        return {
+            ...state,
+            loading: true
+        }
 
         case 'REMOVE_FROM_CART':
            

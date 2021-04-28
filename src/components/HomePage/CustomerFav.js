@@ -4,13 +4,13 @@ import { useStateValue } from '../Context/StateProvider';
 import Title from '../title';
 import {Link} from 'react-router-dom';
 
-const HomeMagic = () => {
+const CustomerFav = () => {
     const[{homes3}] = useStateValue(); 
 
     return(
         <div>
         <section className="product-section">
-      <div className="product-slide">
+      <div className="fav-product">
         <div className="product-magic">
         <Title name= 'Customer' title='Favourites' />
         <p>Shop pure ingredients—the highest quality we could find on Earth,
@@ -39,4 +39,4 @@ const HomeMagic = () => {
     )
 }
 
-export default HomeMagic;
+export default CustomerFav;

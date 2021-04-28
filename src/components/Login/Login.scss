@@ -10,14 +10,18 @@ $black2: #252525;
 $grey1: #959595;
 
 .login{
-    height: 100vh;
-    background: linear-gradient(to right,$primaryColor, $grey1 );
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url('../Img/shopping-mall.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     @media screen and (max-width: 600px) {
       height: 100%;  
       margin: 50px 0;
     }
     .login-page{
-       padding: 20px 0;
+       padding: 50px 0;
+   
         img{
             max-width: 50%;
             margin: 20px auto;
