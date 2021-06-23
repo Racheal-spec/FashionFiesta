@@ -1,7 +1,6 @@
 import React from 'react';
 import Product from '../Product/Product';
 import { useStateValue } from '../Context/StateProvider';
-import Title from '../title';
 
 const HomeProduct = () => {
     const[{homes}] = useStateValue(); 
@@ -9,7 +8,7 @@ const HomeProduct = () => {
     return(
         <div>
         <section className="product-section">
-        <Title name= 'Featured' title='Products' />
+        <h3>Featured <b>Products</b></h3>
         <div className="container product-cards">   
         {homes.map((item) => ( 
                 <div className="home-card" key= {item.id}>

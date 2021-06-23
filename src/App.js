@@ -12,7 +12,6 @@ import Home from './components/HomePage/Home';
 import Wears from './components/WearsPage/Wears';
 import Watches from './components/WatchesPage/Watches';
 import Bags from './components/BagsPage/Bags';
-import Preloader from './Preloader';
 const Cart = React.lazy(()=> import('./components/CartPage/Cart'))
 const Details = React.lazy(()=> import('./components/DetailsPage/Details'))
 const Login = React.lazy(()=> import('./components/Login/Login'))
@@ -26,7 +25,7 @@ const [{loading}, dispatch] = useStateValue();
 
 useEffect(()=> {
   if(loading === true) {
-    <Preloader />
+  
   } else {
     dispatch({
       type: 'LOAD_USERS',

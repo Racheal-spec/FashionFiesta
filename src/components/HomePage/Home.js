@@ -3,7 +3,7 @@ import './Home.scss';
 import HomeHero from './HomeHero';
 import HomeProduct from './HomeProduct';
 import HomeOverlay from './HomeOverlay';
-import HomeProduct2 from './HomeProduct2';
+import HomeProduct2 from './CustomerProduct2';
 import HomeCard from './HomeCard';
 import Newsletter from './Newsletter';
 import CustomerFav from './CustomerFav';

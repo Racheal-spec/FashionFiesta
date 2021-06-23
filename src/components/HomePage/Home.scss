@@ -9,82 +9,76 @@ $grey2: #ccc;
 $primaryColor: #f1f1f1;
 $black: #212529;
 
+@import "../../mixins/mixins.scss";
+
 
 .hero-section{
-  background-color: $black; 
-  padding-top: 55px;
- .hero-slider{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     @media screen and (max-width: 600px) {
+  background: linear-gradient( #2b95a1, #d69fd8); 
+  @include flex(center, center);
+  height: 65vh;
+  padding-top: 50px;
+ .hero{
+    @include flex(center, center);
+    @media screen and (max-width: 600px) {
       flex-direction: column;   
      }
-   .hero-img{
+   .hero-left{
     flex: 0.6;
-    img{
-        width: 100%;
-        object-fit: cover;
-        filter: brightness(40%);
+    color: $white;
+    @media screen and (max-width: 768px) {
+        text-align: left;
     }
    }
-    .hero-text{
+    .hero-right{
         text-align: left;
         margin: 20px 0;
         color: white;
         flex: 0.4;
-        h2{
-            font-size: 2.6rem;
+        h3{
+            font-size: 2rem;
             padding: 0 5px;
        @media screen and (max-width: 600px) {
            font-size: 1.6rem;
        }
         }
         .hero-button{
-            border: none;
-            background-color:$secondaryGreen;
-            color: $white;
-            font-weight: bold;
-            padding: 6px 14px;
-            transition: all 0.5s ease-in;
-        &:hover{
-            text-decoration: none;
-            background-color: $mainGreen ;
+          @include Buttons($secondaryGreen);
+          &:hover{
+            background-color: $mainGreen;
+          }
         }
     }
 }
 }
 
-}
-
 /*customer's favourites*/
 .product-section{
-    padding: 50px 0;
+    padding: 20px 0;
     .fav-product{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
+        padding: 0 100px;
         @media screen and(max-width:960px){
             grid-template-columns: 1fr;
             padding: 0 5px;
             flex-direction: column;
         }
-        .product-magic{
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
+        .product-text{
+           @include flex(flex-start, center);
             flex-direction: column;
-            padding: 0 40px;
-            p{text-align: left; margin-left: 20px;}
+        
+            @media screen and(max-width: 960px) {
+                padding: 0 20px;
+            }
+            p{text-align: left;}
             .magic-link{
                 color: $secondaryGreen;
                 font-weight: bold;
-                margin: 10px 20px;
+                margin: 2px 0;
             }
         }
-    }
-    
+    }    
 }
-
 
 /*collection section*/
 
@@ -105,7 +99,7 @@ $black: #212529;
     }
   .card-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px ;
     width: 80%;
     margin: 0 auto;
@@ -136,6 +130,7 @@ $black: #212529;
   }
     
 }
+
 /*fixed background section*/
 
 .fixed-section{
@@ -151,16 +146,10 @@ $black: #212529;
         margin: 0 auto;
         margin-top: 10%;
         .main-button{
-            border: none;
-            background-color: $secondaryGreen;
-            color: $white;
-            font-weight: bold;
-            padding: 6px 14px;
-            transition: all 0.5s ease-in;
-        &:hover{
-            text-decoration: none;
+            @include Buttons($secondaryGreen);
+          &:hover{
             background-color: $secondaryBlue;
-        }
+          }
         }    
         @media screen and (max-width:600px) {
             width: 98%;
@@ -172,6 +161,8 @@ $black: #212529;
             font-weight: bold;
             @media screen and (max-width:600px) {
                font-size: 1.2rem;
+               width: 90%;
+               margin: 0 auto;
             }
         }
     }
@@ -187,23 +178,20 @@ $black: #212529;
         }
 }
 }
- 
 //Newsletter section
-
 .newsletter{
     background: linear-gradient(to right,rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url('../Img/wears.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding: 40px 0; 
-    margin: 80px;
+    padding: 10px 0; 
+    margin: 40px 20px;
     @media screen and (max-width: 600px) {
     padding: 10px;  
     margin: 20px;
     }
     .news-div{ 
-   
     .news-input{
         width: 30%;
         padding: 10px 5px;
@@ -222,52 +210,33 @@ $black: #212529;
         background-color: $secondaryGreen;
     }
     button{
-        border: none;
-        background-color: $secondaryGreen;
-        color: $white;
-        font-weight: bold;
-        padding: 10px 14px;
-        transition: all 0.5s ease-in;
-    &:hover{
-        text-decoration: none;
-        background-color: $mainGreen;
-    }
+        @include Buttons($secondaryGreen);
+        padding: 11px 18px;
+          &:hover{
+            background-color: $mainGreen;
+          }
     }
     }
 }
 
 .product-section{
-   /*padding: 30px 0;*/
     background: $primaryColor;
     .product-cards{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-column-gap: 30px;
-        grid-row-gap: 50px;
-        @media screen and (max-width: 600px) {
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 10px;
-            grid-row-gap: 20px;
-        }
+       @include all-cards;
     }    
 }
-
 @media screen and (max-width: 600px){
-    .hero-text{
+    .hero-right{
         p, h2{
         width: 100%;
         }   
     }
 }
-
 @media screen and (min-width: 601px) and (max-width: 767px){
-    .hero-text{
+    .hero-right{
+        @include flex(center, center);
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-       
         p, h2{
             width: 100%;
             text-align: center;

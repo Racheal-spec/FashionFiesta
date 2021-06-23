@@ -5,31 +5,23 @@ $lightGreen: #2b95a18a;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
+@import "../../mixins/mixins.scss";
+
 .details{
     padding: 100px 0;
     button{
-        border: none;
-        background-color: $mainPink;
-        color: $white;
-        font-weight: bold;
-        width: 30%;
-        padding: 4px 5px;
+        @include Buttons($mainPink);
         box-shadow: 0px 2px 0px 2px $secondaryGreen;
-        transition: all 0.4s ease-in;
-        cursor: pointer;
+        &:hover{
+            background-color: $secondaryGreen;
+        }   
         @media screen and (max-width: 600px) {
            width: 50%;
-        }
-    &:hover{
-        text-decoration: none;
-        background-color: $secondaryGreen;
-    }    
+        } 
     }
     .row{
         @media screen and (min-width: 768px){
-         display: flex;
-         align-items: center;
-         justify-content: center;
+        @include flex(center, center);
         }      
     }
     img{

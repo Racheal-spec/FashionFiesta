@@ -10,6 +10,7 @@ $primaryColor: #f1f1f1;
 $black: #212529;
 $black2: #252525;
 
+@import "../../mixins/mixins.scss";
 
   .navs{
     position: relative;
@@ -26,9 +27,7 @@ $black2: #252525;
     .wrapper{
       position: relative;
       max-width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+     @include flex(center, space-between);
       padding: 0 80px;
       .name-h6{
         color: $secondaryGreen;
@@ -44,9 +43,7 @@ $black2: #252525;
         }
       }
       .nav-ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      @include flex(center, center);
         margin-top: 5px;
         h6{
           color: $secondaryGreen;
@@ -64,16 +61,13 @@ $black2: #252525;
           .mega-menu{
             width: 100%;
             position: absolute;
-            top: 85px;
+            top: 50px;
             left: 0;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
+           visibility: hidden;
+            z-index: 2;
            .content{
              background: $grey2;
-             display: flex;
-             align-items: center;
-             justify-content: space-around;
+            @include flex(center, space-around);
              padding: 25px 20px;
              width: 100%;
              @media screen and (max-width: 960px) {
@@ -88,7 +82,7 @@ $black2: #252525;
              @media screen and (max-width: 960px){
                width: 100%;
              }
-              &:nth-child(1){
+              &:first-child{
                 border-left: 0;
               }
               .text{
@@ -101,8 +95,7 @@ $black2: #252525;
                   @media screen and (max-width: 960px) {
                     font-size: 0.8rem;
                   }
-                }
-               
+                } 
               }
                 img{
                   width:70%;
@@ -132,10 +125,9 @@ $black2: #252525;
           list-style: none;
           &:hover{
             .mega-menu{
-              top: 55px;
-              opacity: 1;
+              top: 50px;
               visibility: visible;
-              transition: all 0.4s ease;
+              transition: all 0.3s ease;
             }
           
           }
@@ -206,67 +198,3 @@ $black2: #252525;
     display: block;
   }
 }
-
-
-
-
-
-  /*
-.navs{
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  .firstnav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $mainGreen;
-    box-shadow: 0px 3px 5px 0px $mainGreen;
-    padding: 5px 50px;
-    @media screen and (max-width: 600px) {
-      padding: 10px 0;
-    }
-    .logo-div{
-      .logo-img{
-        max-width: 100%;
-        margin-left: 30px;
-      }
-    }
-    .nav-ul{
-      display: flex;
-      margin-top: 20px;
-      list-style: none;
-      .nav-links{
-        color: $white;
-        font-weight: bold;
-        transition: all 0.4s ease-in;
-        &:hover{
-          text-decoration: none;
-          color: $mainPink;
-        }
-        li{
-          &:hover{
-            opacity: 1;
-            visibility: visible;
-          }
-          .dropdown{
-            background: $white;
-            opacity: 0;
-            visibility: hidden;
-            .nav-links{
-              li{
-              display: block;
-              width: 100%;
-              }
-            }
-          }
-        }
-        @media screen and (max-width: 600px) {
-          margin: 20px 0;
-        }
-       } 
-  }
-  }
-}
- */

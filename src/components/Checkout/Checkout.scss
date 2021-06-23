@@ -9,6 +9,8 @@ $grey2: #ccc;
 $primaryColor: #f1f1f1;
 $black: #212529;
 
+@import "../../mixins/mixins.scss";
+
 .checkout-page{
   background-color: $grey2;
   padding: 40px 0;
@@ -111,8 +113,7 @@ $black: #212529;
         p{text-align: left; padding: 20px 0;}
     }
     form{
-        display: flex;
-        align-items: flex-start;
+        @include flex(flex-start, center);
         flex-direction: column;
         label{font-weight: 500;}
         input{
@@ -128,17 +129,10 @@ $black: #212529;
         text-align: start;
     }
     .pay-btn{
-        border: none;
+        @include Buttons($secondaryGreen);
+        @include flex(flex-start, center);
         margin-top: 10px;
-        background-color:$secondaryGreen;
-        color: $white;
-        font-weight: bold;
-        padding: 6px 14px;
-        transition: all 0.5s ease-in;
-        display: flex;
-        align-self: flex-start;
     &:hover{
-        text-decoration: none;
         background-color: $mainGreen ;
     }
     } 
@@ -163,5 +157,3 @@ $black: #212529;
 
 }  
 }
-
-/*  box-shadow: 1px 2px 1px 2px rgba(197, 197, 197, 0.39);*/

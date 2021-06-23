@@ -9,6 +9,8 @@ $grey2: #ccc;
 $primaryColor: #f1f1f1;
 $black: #212529;
 
+@import "../../mixins/mixins.scss";
+
 .cart-product{
     display: flex;
     align-items: center;
@@ -97,28 +99,17 @@ $black: #212529;
             font-weight: 500;
         }
         .checkout-btn{
-            border: none;
+            @include Buttons($secondaryGreen);
             margin: 8px 10px;
-            background-color:$secondaryGreen;
-            color: $white;
-            font-weight: bold;
-            padding: 6px 14px;
-            transition: all 0.5s ease-in;
         &:hover{
-            text-decoration: none;
             background-color: $mainGreen ;
         }
         }
         .shopmore-btn{
+            @include Buttons(transparent);
             border: 1px solid $secondaryGreen;
             margin: 8px 10px;
-            background-color:transparent;
-            color: $white;
-            font-weight: bold;
-            padding: 6px 14px;
-            transition: all 0.5s ease-in;
         &:hover{
-            text-decoration: none;
             border: 3px solid $secondaryGreen;
         }
         }
@@ -132,8 +123,7 @@ $black: #212529;
     padding: 30px;
 @media screen and (max-width:600px) {
     max-width: 100%;
-    display: flex;
-    align-items: flex-start;
+    @include flex(flex-start,center);
 }        
 }  
 

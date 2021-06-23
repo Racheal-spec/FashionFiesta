@@ -2,7 +2,6 @@ import React, {useRef, useState, useEffect } from 'react';
 import './product.scss';
 import {Link} from 'react-router-dom';
 import { useStateValue } from '../Context/StateProvider';
-import lozad from 'lozad';
 
 const Product = ({id, title, image, rating, price}) => {
   const[, dispatch] = useStateValue();
@@ -33,18 +32,14 @@ useEffect(()=> {
   return () => clearTimeout(timer)    
 })
 
-const observer = lozad(); 
-observer.observe();
-
 return(
   <>
 <div className="card mx-2">
     <Link to={`Details/${id}`} className="product-link">
    <img
-   data-src={image} 
+   src={image}
    alt="product" 
-   className="lozad"
-   data-placeholder-background="grey"
+   className="product-img"
    />
   <p className="product-title font-weight-bold">{title}</p>
   </Link>

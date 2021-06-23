@@ -9,6 +9,8 @@ $black: #212529;
 $black2: #252525;
 $grey1: #959595;
 
+@import "../../mixins/mixins.scss";
+
 .login{
     min-height: 100vh;
     background: linear-gradient(to right,rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url('../Img/shopping-mall.jpg');
@@ -66,38 +68,23 @@ $grey1: #959595;
                 font-weight: bold;
             }
             .login-btn{
-                border: none;
-                background-color: $secondaryGreen;
-                color: $white;
-                font-weight: bold;
-                width: 88%;
-                margin: 15px 20px;
-                padding: 6px 14px;
-                transition: all 0.4s ease-in;
-                cursor: pointer;
-            &:hover{
-                text-decoration: none;
-                background-color: $mainGreen;
-            }
-           
-            }
-            .create-btn{
-                background: transparent;
-                border: none;
-                color: $secondaryGreen;
-                font-weight: 500;
-                border: 2px solid $secondaryGreen;
-                width: 88%;
-                margin: 15px 20px;
-                padding: 6px 14px;
-                transition: all 0.4s ease-in;
-                cursor: pointer;
-            &:hover{
-                text-decoration: none;
+              @include Buttons($secondaryGreen);
+              margin: 15px 20px;
+              &:hover{
                 background-color: $mainGreen;
                 color: $white;
-            }
             } 
+            }
+          .create-btn{
+              @include Buttons(transparent);
+              color: $secondaryGreen;
+              border: 2px solid $secondaryGreen;
+              margin: 15px 20px;
+              &:hover{
+                background-color: $mainGreen;
+                color: $white;
+            }
+          }
         }
     }
 }

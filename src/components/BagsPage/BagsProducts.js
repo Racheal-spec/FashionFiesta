@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from '../title';
 import Product from '../Product/Product';
 import { bags } from '../../Data/bags';
 
@@ -9,7 +8,7 @@ const BagsProducts = () => {
 <div>
 <section>
 <div className="bags-section">
-<Title name= 'Fiesta' title='Bags'/> 
+<h3>Fiesta <b>Bags</b></h3>
     <div className="container bags-card my-5">       
 {bags.map((item) => (
 <div className="card" key={item.id}>

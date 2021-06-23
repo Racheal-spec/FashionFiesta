@@ -1,7 +1,6 @@
 export const home =  [
     {
         id: "1213411",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 1110.96,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -9,7 +8,6 @@ export const home =  [
     },
     {
         id: "1236422",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 140,
         rating: 4,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -17,7 +15,6 @@ export const home =  [
     },
     {
         id: "1231413",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 120.5,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -25,7 +22,6 @@ export const home =  [
     },
     {
         id:"125420",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 500,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -37,7 +33,6 @@ export const home =  [
 export const home2 = [
     {
         id: "1238409",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 1990,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -45,7 +40,6 @@ export const home2 = [
     },
     {
         id: "1236402",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 330,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -53,7 +47,6 @@ export const home2 = [
     },
     {
         id: "1239419",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 3500,
         rating: 4,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -61,7 +54,6 @@ export const home2 = [
     },
     {
         id: "1230306",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 2290,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -73,7 +65,6 @@ export const home2 = [
 export const home3 = [
     {
         id: "1235419",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 3500,
         rating: 4,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -81,7 +72,6 @@ export const home3 = [
     },
     {
         id: "121309",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 450,
         rating: 5,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
@@ -89,21 +79,9 @@ export const home3 = [
     },
     {
         id: "123303",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
         price: 4100,
         rating: 4,
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
         image: "https://m.media-amazon.com/images/I/41AyziEKfWL._AC_SR320,400_.jpg"
        }
-   
-    /*
-  {
-        id: "129421",
-        title: "Sed voluptatem accusantium doloremque eaque ipsa",
-        price: 580,
-        rating: 5,
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor posuere ac ut consequat semper. Non tellus orci ac auctor augue mauris augue. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Sed tempus urna et pharetra pharetra massa massa ultricies. Sagittis orci a scelerisque purus semper eget duis. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Urna et pharetra pharetra massa massa ultricies mi quis. Sit amet risus nullam eget felis eget",
-        image: "https://m.media-amazon.com/images/I/61dwYndNEbL._AC_UL480_FMwebp_QL65_.jpg"
-    }
-    */
 ]

@@ -4,6 +4,8 @@ $secondaryGreen: #2B95A1;
 $secondaryBlue: #8DCAFF;
 $white: #ffffff;
 
+@import "../../mixins/mixins.scss";
+
 .bags-herosection{
     .bags-bg{
         height: 480px;
@@ -22,14 +24,6 @@ $white: #ffffff;
 .bags-section{
     padding: 50px 0;
     .bags-card{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-column-gap: 30px;
-        grid-row-gap: 50px;
-        @media screen and (max-width: 600px) {
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 10px;
-            grid-row-gap: 20px;
-        }
+       @include all-cards;
     }
 }
